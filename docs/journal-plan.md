@@ -7,6 +7,13 @@ coco-atelier.com, and turn them into WhatsApp/phone enquiries.
 Markets: Israel, Greece, Italy, USA, wider Europe; plus people buying or renovating
 abroad (e.g. Americans/Europeans in Tel Aviv, Israelis in Greece).
 
+## Decisions (2026-11-19)
+
+- Languages: English for all 100; Hebrew versions of the Israel-focused articles.
+- Review: Coral reviews every batch before it is scheduled.
+- Case studies: written only from what is already on the site (no extra project
+  details from Coral for now), so they stay factual and shorter.
+
 ## Ground rules (these protect rankings and the business)
 
 1. **Experience first.** Google's "helpful content" and E-E-A-T rules, and AI search
