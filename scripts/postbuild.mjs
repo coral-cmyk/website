@@ -1,6 +1,14 @@
 // Runs after `vite build`: turns the pre-rendered /404 page into GitHub Pages'
 // 404.html and writes sitemap.xml listing every pre-rendered page.
-import { readdirSync, statSync, copyFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
+import {
+  readdirSync,
+  readFileSync,
+  statSync,
+  copyFileSync,
+  rmSync,
+  writeFileSync,
+  existsSync,
+} from "node:fs";
 import { join, relative, sep } from "node:path";
 
 const SITE = "https://coco-atelier.com";
@@ -19,7 +27,9 @@ function pages(dir) {
   });
 }
 
+// Pages marked noindex (drafts, an empty Journal) stay out of the sitemap.
 const urls = pages(out)
+  .filter((file) => !readFileSync(file, "utf8").includes('name="robots" content="noindex"'))
   .map((file) => {
     const dir = relative(out, file).split(sep).slice(0, -1).join("/");
     return `${SITE}/${dir ? `${dir}/` : ""}`;

@@ -2,6 +2,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
 import { WhatsAppLogo } from "@/components/WhatsAppLogo";
 import { SOCIAL, projects } from "@/lib/projects";
+import { posts } from "@/lib/journal";
 import { ContactButtons, PHONE } from "@/components/ContactButtons";
 import logoBone from "@/assets/coco-atelier-bone.png.asset.json";
 import logoInk from "@/assets/coco-atelier-ink.png.asset.json";
@@ -58,6 +59,11 @@ export function Header() {
           <Link to="/projects" className="link-line">Projects</Link>
           <Link to="/studio" className="link-line">Studio</Link>
           <Link to="/press" className="link-line">Press</Link>
+          {posts.length > 0 && (
+            <Link to="/journal" className="link-line">
+              Journal
+            </Link>
+          )}
           <Link to="/contact" className="link-line">Contact</Link>
         </nav>
       </div>

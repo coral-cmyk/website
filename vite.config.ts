@@ -19,8 +19,9 @@ export default defineConfig({
         // Only crawl pages; images under /assets are copied as-is from public/.
         filter: ({ path }) => !path.startsWith("/assets/"),
       },
-      // Nothing links to /404, so list it explicitly; postbuild turns it into 404.html.
-      pages: [{ path: "/404" }],
+      // Nothing links to /404 (or to /journal before its first post), so list them
+      // explicitly; postbuild turns /404 into 404.html.
+      pages: [{ path: "/404" }, { path: "/journal" }],
     }),
     viteReact(),
     tailwindcss(),

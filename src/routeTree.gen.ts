@@ -17,6 +17,8 @@ import { Route as PressRouteImport } from './routes/press'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as StudioRouteImport } from './routes/studio'
+import { Route as JournalIndexRouteImport } from './routes/journal.index'
+import { Route as JournalSlugRouteImport } from './routes/journal.$slug'
 import { Route as WorkSlugRouteImport } from './routes/work.$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -59,6 +61,16 @@ const StudioRoute = StudioRouteImport.update({
   path: '/studio',
   getParentRoute: () => rootRouteImport,
 } as any)
+const JournalIndexRoute = JournalIndexRouteImport.update({
+  id: '/journal/',
+  path: '/journal/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JournalSlugRoute = JournalSlugRouteImport.update({
+  id: '/journal/$slug',
+  path: '/journal/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkSlugRoute = WorkSlugRouteImport.update({
   id: '/work/$slug',
   path: '/work/$slug',
@@ -74,7 +86,9 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
   '/studio': typeof StudioRoute
+  '/journal/$slug': typeof JournalSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/journal/': typeof JournalIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -85,7 +99,9 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
   '/studio': typeof StudioRoute
+  '/journal/$slug': typeof JournalSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/journal': typeof JournalIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -97,7 +113,9 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/projects': typeof ProjectsRoute
   '/studio': typeof StudioRoute
+  '/journal/$slug': typeof JournalSlugRoute
   '/work/$slug': typeof WorkSlugRoute
+  '/journal/': typeof JournalIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -110,7 +128,9 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/projects'
     | '/studio'
+    | '/journal/$slug'
     | '/work/$slug'
+    | '/journal/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -121,7 +141,9 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/projects'
     | '/studio'
+    | '/journal/$slug'
     | '/work/$slug'
+    | '/journal'
   id:
     | '__root__'
     | '/'
@@ -132,7 +154,9 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/projects'
     | '/studio'
+    | '/journal/$slug'
     | '/work/$slug'
+    | '/journal/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -144,7 +168,9 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   ProjectsRoute: typeof ProjectsRoute
   StudioRoute: typeof StudioRoute
+  JournalSlugRoute: typeof JournalSlugRoute
   WorkSlugRoute: typeof WorkSlugRoute
+  JournalIndexRoute: typeof JournalIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -205,6 +231,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StudioRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/journal/': {
+      id: '/journal/'
+      path: '/journal'
+      fullPath: '/journal/'
+      preLoaderRoute: typeof JournalIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journal/$slug': {
+      id: '/journal/$slug'
+      path: '/journal/$slug'
+      fullPath: '/journal/$slug'
+      preLoaderRoute: typeof JournalSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/$slug': {
       id: '/work/$slug'
       path: '/work/$slug'
@@ -224,7 +264,9 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   ProjectsRoute: ProjectsRoute,
   StudioRoute: StudioRoute,
+  JournalSlugRoute: JournalSlugRoute,
   WorkSlugRoute: WorkSlugRoute,
+  JournalIndexRoute: JournalIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

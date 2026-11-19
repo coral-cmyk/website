@@ -3,6 +3,7 @@
 - The site is fully static: `npm run build` pre-renders every page into `dist/client`, and GitHub Actions (`.github/workflows/deploy.yml`) publishes it to GitHub Pages on every push to `main`. Keep `main` building and its tests passing.
 - Images live in `public/assets/`; each `src/assets/**/*.asset.json` record points at its file there via `url`. Add new images the same way.
 - Link previews: every project cover needs a small copy in `public/assets/share/` (run `sh scripts/make-share-images.sh <cover path>` on a Mac and add the path to `scripts/share-images.txt`). `src/test/share-images.test.ts` fails if one is missing.
+- Journal (blog): one Markdown file per post in `src/content/journal/` (see the header format in `src/lib/journal.ts`; `example-post.md` is a draft template). Post photos go in `public/assets/journal/`; a post with a `cover` also needs a share copy (`sh scripts/make-share-images.sh /assets/journal/<file>`, then add the path to `scripts/share-images.txt`). The Journal menu link appears automatically once a non-draft post exists. Never invent posts; write only what Coral provides.
 - No server code runs in production, so features that need a backend (form submissions, server functions) need a separate service.
 
 ## Rules
