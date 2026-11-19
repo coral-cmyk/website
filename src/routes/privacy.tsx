@@ -117,9 +117,8 @@ function PrivacyPolicy() {
         <section className={section} aria-labelledby="privacy-external">
           <h2 id="privacy-external" className={heading}>External content and links</h2>
           <p>
-            The website loads fonts from Google Fonts and some project photographs from Wix image
-            servers. Those providers receive the technical request needed to deliver the file, which
-            can include your IP address and browser information, under their own privacy policies.
+            The website loads fonts from Google Fonts. Google receives the technical request needed to deliver the file, which
+            can include your IP address and browser information, under its own privacy policy.
           </p>
           <p>
             Links to WhatsApp, Instagram, press articles and other external websites take you to
@@ -234,9 +233,9 @@ function PrivacyPolicy() {
         <section className={section} aria-labelledby="he-privacy-external">
           <h3 id="he-privacy-external" className={heading}>תוכן וקישורים חיצוניים</h3>
           <p>
-            האתר טוען גופנים מ־Google Fonts וחלק מתמונות הפרויקטים משרתי התמונות של Wix. ספקים אלה
-            מקבלים את הבקשה הטכנית הדרושה להעברת הקובץ, שעשויה לכלול כתובת IP ופרטי דפדפן, בהתאם
-            למדיניות הפרטיות שלהם.
+            האתר טוען גופנים מ־Google Fonts. Google
+            מקבלת את הבקשה הטכנית הדרושה להעברת הקובץ, שעשויה לכלול כתובת IP ופרטי דפדפן, בהתאם
+            למדיניות הפרטיות שלה.
           </p>
           <p>
             קישורים לוואטסאפ, לאינסטגרם, לכתבות ולאתרים חיצוניים אחרים מעבירים לשירותים בעלי

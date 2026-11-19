@@ -1,57 +1,82 @@
-const W = "https://static.wixstatic.com/media/";
-// Photos stored with the site are full paths; older ones are still Wix file ids.
-export const img = (id: string, w = 1800) =>
-  id.startsWith("/") || id.startsWith("http") ? id : `${W}${id}/v1/fit/w_${w},h_${w},q_85/${id}`;
+// Photos stored with the site are full paths. Older ones keep their original Wix
+// file ids (e.g. "b294f9_…~mv2.jpg"); those files now live in public/assets/wix/
+// without the "~mv2" suffix. Width is kept for callers but no longer used.
+export const img = (id: string, _w = 1800) =>
+  id.startsWith("/") || id.startsWith("http") ? id : `/assets/wix/${id.replace("~mv2", "")}`;
 
 const xlApt = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/xl-apt/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/xl-apt/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 const crSuites = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/cr-suites/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/cr-suites/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // CR Suites layout drawing, kept apart from the interior photos.
 const crSuitesPlan = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/cr-suites-plan/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/cr-suites-plan/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 const appcharge = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/appcharge/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/appcharge/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // APPCHARGE office layout, kept apart from the interior photos.
 const appchargePlan = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/appcharge-plan/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/appcharge-plan/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // STUDENT APTS 01 photos, in display order; student-apts-01-1 is the cover.
 const studentApts01 = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/student-apts-01/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/student-apts-01/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // STUDENT APTS 02 photos, in display order; student-apts-02-1 (the living room) is the cover.
 const studentApts02 = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/student-apts-02/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/student-apts-02/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // STUDENT APTS 03 photos, in display order; student-apts-03-1 (the living room) is the cover.
 const studentApts03 = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/student-apts-03/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/student-apts-03/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
@@ -65,63 +90,90 @@ const studentAptsText = [
 
 // EI Library photos, in display order; ei-library-1 (uploaded as 33.jpg) is the cover.
 const eiLibrary = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/ei-library/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/ei-library/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // GY Apt interior photos, in display order; gy-apt-1 is the cover.
 const gyApt = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/gy-apt/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/gy-apt/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // GY Apt floor plan, kept apart from the interior photos.
 const gyAptPlan = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/gy-apt-plan/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/gy-apt-plan/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // DR Clinic photos, in display order; dr-clinic-1 is the cover.
 const drClinic = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/dr-clinic/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/dr-clinic/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // Brodt Lobby photos, in display order; brodt-lobby-1 is the cover.
 const brodtLobby = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/brodt-lobby/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/brodt-lobby/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // MES Apt photos, in display order; mes-apt-1 is the cover.
 const mesApt = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/mes-apt/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/mes-apt/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // HY Apt photos, in display order; hy-apt-1 is the cover.
 const hyApt = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/hy-apt/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/hy-apt/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // NET Project photos, in display order; net-project-0 is the cover.
 const netProject = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/net-project/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/net-project/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
 
 // Monday photos, in display order; monday-1 is the cover.
 const monday = Object.entries(
-  import.meta.glob<{ url: string }>("../assets/monday/*.asset.json", { eager: true, import: "default" }),
+  import.meta.glob<{ url: string }>("../assets/monday/*.asset.json", {
+    eager: true,
+    import: "default",
+  }),
 )
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([, v]) => v.url);
@@ -535,7 +587,6 @@ const allProjects: Project[] = [
     ],
     images: drClinic,
   },
-
 ];
 
 // The Projects page shows these, in this order. Drop a slug to hide a project,
@@ -562,8 +613,8 @@ const PROJECT_ORDER = [
   "dr-clinic",
 ];
 
-export const projects: Project[] = PROJECT_ORDER.map(
-  (slug) => allProjects.find((p) => p.slug === slug),
+export const projects: Project[] = PROJECT_ORDER.map((slug) =>
+  allProjects.find((p) => p.slug === slug),
 ).filter((p): p is Project => p !== undefined);
 
 /**
