@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { img } from "@/lib/projects";
+import { img, shareImg, STUDIO_PORTRAIT } from "@/lib/projects";
 
-const portrait = img("b294f9_803c17fa25404efea46495707e7367db~mv2.jpg", 1400);
+const portrait = img(STUDIO_PORTRAIT, 1400);
+const sharePortrait = shareImg(STUDIO_PORTRAIT);
 
 export const Route = createFileRoute("/studio")({
   head: () => ({
@@ -12,8 +13,8 @@ export const Route = createFileRoute("/studio")({
       { property: "og:description", content: "Residential, hospitality, and commercial interiors by Coral Mesika — Tel Aviv and international." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: portrait },
-      { name: "twitter:image", content: portrait },
+      { property: "og:image", content: sharePortrait },
+      { name: "twitter:image", content: sharePortrait },
     ],
   }),
   component: Studio,

@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { projects, img } from "@/lib/projects";
+import { projects, img, shareImg } from "@/lib/projects";
 import { CoverGallery, UpcomingGallery } from "@/components/CoverGallery";
 import logoBone from "@/assets/coco-atelier-bone.png.asset.json";
 
 const portrait = img("b294f9_803c17fa25404efea46495707e7367db~mv2.jpg", 1200);
 const heroUrl = img(projects.find((p) => p.slug === "xl-apt")?.cover ?? "", 2400);
+const heroShare = shareImg(projects.find((p) => p.slug === "xl-apt")?.cover ?? "");
 
 // One button style for the three calls to action on this page. On a phone the
 // letter-spacing tightens and the wording is held on a single line; on a computer
@@ -25,7 +26,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Interior Design by Coral Mesika" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      ...(heroUrl.startsWith("http") ? [{ property: "og:image", content: heroUrl }, { name: "twitter:image", content: heroUrl }] : []),
+      { property: "og:image", content: heroShare },
+      { name: "twitter:image", content: heroShare },
     ],
   }),
   component: Index,

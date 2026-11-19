@@ -4,6 +4,18 @@
 export const img = (id: string, _w = 1800) =>
   id.startsWith("/") || id.startsWith("http") ? id : `/assets/wix/${id.replace("~mv2", "")}`;
 
+export const SITE_URL = "https://coco-atelier.com";
+
+// Link previews (WhatsApp, Instagram, Facebook…) need a full URL and a small file.
+// Each cover has a 1200px copy in public/assets/share/, made by
+// scripts/make-share-images.sh; src/test/share-images.test.ts fails if one is missing.
+export const sharePath = (id: string) =>
+  img(id)
+    .replace(/^\/assets\//, "/assets/share/")
+    .replace(/\.[a-z]+$/i, ".jpg");
+export const shareImg = (id: string) => `${SITE_URL}${sharePath(id)}`;
+export const STUDIO_PORTRAIT = "b294f9_803c17fa25404efea46495707e7367db~mv2.jpg";
+
 const xlApt = Object.entries(
   import.meta.glob<{ url: string }>("../assets/xl-apt/*.asset.json", {
     eager: true,

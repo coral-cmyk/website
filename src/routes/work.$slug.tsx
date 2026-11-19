@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
-import { projects, img, galleryImages, gallerySpans } from "@/lib/projects";
+import { projects, img, shareImg, galleryImages, gallerySpans } from "@/lib/projects";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/work/$slug")({
     const p = loaderData?.project;
     if (!p) return { meta: [{ title: "Project — Coco Atelier" }, { name: "robots", content: "noindex" }] };
     const desc = (p.text[0] || `${p.name}${p.underConstruction ? " — under construction" : ""}, an interior project by Coco Atelier, Coral Mesika.`).slice(0, 155);
-    const image = p.cover ? img(p.cover, 1600) : "";
+    const image = p.cover ? shareImg(p.cover) : "";
     return {
       meta: [
         { title: `${p.name}${p.category ? ` — ${p.category}` : ""} | Coco Atelier` },
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/work/$slug")({
         { property: "og:description", content: desc },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(image.startsWith("http") ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
+        ...(image ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
       ],
     };
   },
