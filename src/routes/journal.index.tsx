@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { posts, formatDate, readingMinutes, type JournalPost } from "@/lib/journal";
+import { posts, formatDate, readingMinutes, type JournalPost, PREVIEW } from "@/lib/journal";
 import { img } from "@/lib/projects";
 
 export const Route = createFileRoute("/journal/")({
@@ -48,6 +48,11 @@ function Journal() {
   const [lead, ...rest] = posts;
   return (
     <main className="page-enter px-6 pt-36 md:px-12">
+      {PREVIEW && (
+        <p className="mb-10 inline-block bg-[#fff3c4] px-4 py-2 text-sm text-[#3a2f00]">
+          Review preview with drafts. Not the live site; nothing here is public yet.
+        </p>
+      )}
       <header className="grid gap-6 md:grid-cols-12 md:items-end">
         <h1 className="serif-display leading-[0.95] text-[16vw] md:col-span-7 md:text-[9vw]">
           Journal

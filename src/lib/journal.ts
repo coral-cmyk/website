@@ -133,7 +133,24 @@ for (const p of allPosts) {
   }
 }
 
-export const posts: JournalPost[] = import.meta.env.DEV ? allPosts : allPosts.filter(isLive);
+// Review preview (`npm run build:preview`, deployed to a private address): shows
+// drafts and turns Coral's notes into visible boxes so they can be answered in place.
+export const PREVIEW = import.meta.env["VITE_PREVIEW"] === "1";
+
+const showNotes = (p: JournalPost): JournalPost => ({
+  ...p,
+  html: p.html.replace(
+    /<!--\s*CORAL:\s*([\s\S]*?)-->/g,
+    (_, note: string) =>
+      `<aside class="coral-note"><strong>Question for Coral</strong> ${note
+        .trim()
+        .replace(/^confirm or correct\s*[—-]\s*/i, "")
+        .replace(/</g, "&lt;")}</aside>`,
+  ),
+});
+
+export const posts: JournalPost[] =
+  import.meta.env.DEV || PREVIEW ? allPosts.map(showNotes) : allPosts.filter(isLive);
 
 // The other-language version of a post, if both are visible.
 export function translationFor(post: JournalPost): JournalPost | undefined {

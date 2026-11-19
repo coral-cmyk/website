@@ -209,3 +209,22 @@ html.a11y-cursor, html.a11y-cursor * { cursor: url("data:image/svg+xml,%3Csvg xm
 }
 .journal-prose img { width: 100%; height: auto; margin-block: 2em; }
 .journal-prose hr { border: 0; border-top: 1px solid var(--color-border); margin-block: 3em; }
+
+/* Review preview only: Coral's open questions, shown inside the article. */
+.journal-prose .coral-note {
+  display: block;
+  margin-block: 1.5em;
+  padding: 1rem 1.25rem;
+  background: #fff3c4;
+  border-inline-start: 3px solid #d9a400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3a2f00;
+}
+.journal-prose .coral-note strong {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { posts, formatDate, readingMinutes, translationFor } from "@/lib/journal";
+import { posts, formatDate, readingMinutes, translationFor, PREVIEW } from "@/lib/journal";
 import { img, shareImg, projects, SITE_URL, SOCIAL } from "@/lib/projects";
 import { JsonLd, canonical, postSchema } from "@/lib/seo";
 
@@ -116,6 +116,11 @@ function JournalPost() {
 
   return (
     <main className="page-enter px-6 pt-36 md:px-12" dir={post.rtl ? "rtl" : undefined}>
+      {PREVIEW && (
+        <p className="mb-10 inline-block bg-[#fff3c4] px-4 py-2 text-sm text-[#3a2f00]">
+          Review preview with drafts. Not the live site; nothing here is public yet.
+        </p>
+      )}
       <JsonLd data={postSchema(post)} />
       <article lang={post.lang}>
         <header className="max-w-5xl">
