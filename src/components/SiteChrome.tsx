@@ -59,11 +59,6 @@ export function Header() {
           <Link to="/projects" className="link-line">Projects</Link>
           <Link to="/studio" className="link-line">Studio</Link>
           <Link to="/press" className="link-line">Press</Link>
-          {posts.length > 0 && (
-            <Link to="/journal" className="link-line">
-              Journal
-            </Link>
-          )}
           <Link to="/contact" className="link-line">Contact</Link>
         </nav>
       </div>
@@ -79,6 +74,12 @@ export function Footer() {
         <span className="text-ink/60">© {new Date().getFullYear()} Coco Atelier</span>
         <span className="hidden text-ink/60 md:inline">Interior Design by Coral Mesika — Tel Aviv / International</span>
         <div className="flex flex-wrap gap-x-6 gap-y-3 md:gap-8">
+          {/* The Journal lives in the footer, and appears once a post is published. */}
+          {posts.length > 0 && (
+            <Link to="/journal" className="link-line">
+              Journal
+            </Link>
+          )}
           <Link to="/privacy" resetScroll className="link-line">Privacy</Link>
           <Link to="/accessibility" className="link-line">Accessibility</Link>
           <a href={SOCIAL.instagram} target="_blank" rel="noreferrer" className="link-line">Instagram</a>
