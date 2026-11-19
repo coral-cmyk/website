@@ -15,11 +15,8 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header, Footer } from "@/components/SiteChrome";
 import { AccessibilityMenu } from "@/components/AccessibilityMenu";
 import { NotFoundPage } from "@/components/NotFoundPage";
-import { projects, shareImg } from "@/lib/projects";
 import { JsonLd, canonical, studioSchema } from "@/lib/seo";
-
-// Link-preview image for pages that don't set their own (the XL APT cover).
-const DEFAULT_SHARE_IMAGE = shareImg(projects.find((p) => p.slug === "xl-apt")?.cover ?? "");
+import { HOME_CARD, ogMeta } from "@/lib/og";
 
 function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
@@ -68,10 +65,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Interior architecture studio by Coral Mesika." },
       { name: "author", content: "Coco Atelier" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:site_name", content: "Coco Atelier" },
-      { property: "og:image", content: DEFAULT_SHARE_IMAGE },
-      { name: "twitter:image", content: DEFAULT_SHARE_IMAGE },
+      { property: "og:locale", content: "en_US" },
+      { name: "theme-color", content: "#F1EEE8" },
+      // Pages without their own card (privacy, accessibility, 404) share the homepage's.
+      ...ogMeta("/", HOME_CARD),
     ],
     links: [
       {

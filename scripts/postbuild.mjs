@@ -13,7 +13,8 @@ import {
   existsSync,
   mkdirSync,
 } from "node:fs";
-import { join, relative, sep } from "node:path";
+import { dirname, join, relative, sep } from "node:path";
+import { drawCard } from "./og-cards.mjs";
 
 const SITE = "https://coco-atelier.com";
 const out = "dist/client";
@@ -29,6 +30,35 @@ function pages(dir) {
     if (statSync(p).isDirectory()) return name === "assets" ? [] : pages(p);
     return name === "index.html" ? [p] : [];
   });
+}
+
+// Link-preview cards: draw each page's card (src/lib/og.ts) to /og/<page>.jpg and
+// remove the "og-card" tag that carried its content.
+const CARD_TAG = /<meta[^>]*name="og-card"[^>]*>/;
+const drawn = new Set();
+for (const file of [...pages(out), join(out, "404.html")]) {
+  const html = readFileSync(file, "utf8");
+  const tag = html.match(CARD_TAG)?.[0];
+  if (!tag) continue;
+  const card = JSON.parse(
+    tag
+      .match(/content="([^"]*)"/)[1]
+      .replace(/&quot;/g, '"')
+      .replace(/&#x27;|&#39;/g, "'")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&amp;/g, "&"),
+  );
+  if (!drawn.has(card.key)) {
+    const photoFile = join(out, card.photo);
+    if (!existsSync(photoFile)) throw new Error(`Link-preview card ${card.key}: missing photo ${card.photo}`);
+    const jpeg = await drawCard(card, { photoFile, logoFile: join(out, "assets/coco-atelier-bone.png") });
+    const target = join(out, "og", `${card.key}.jpg`);
+    mkdirSync(dirname(target), { recursive: true });
+    writeFileSync(target, jpeg);
+    drawn.add(card.key);
+  }
+  writeFileSync(file, html.replace(CARD_TAG, ""));
 }
 
 const decode = (s) =>
@@ -151,5 +181,5 @@ ${section(
 writeFileSync(join(out, "llms.txt"), llms.replace(/\n{3,}/g, "\n\n"));
 
 console.log(
-  `[postbuild] 404.html, sitemap.xml (${indexable.length} pages), journal/rss.xml (${posts.length} posts), llms.txt`,
+  `[postbuild] 404.html, ${drawn.size} link-preview cards, sitemap.xml (${indexable.length} pages), journal/rss.xml (${posts.length} posts), llms.txt`,
 );

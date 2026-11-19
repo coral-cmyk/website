@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { posts, formatDate, readingMinutes, translationFor, PREVIEW } from "@/lib/journal";
-import { img, shareImg, projects, SITE_URL, SOCIAL } from "@/lib/projects";
+import { img, projects, SITE_URL, SOCIAL } from "@/lib/projects";
+import { ogMeta, HERO_PHOTO } from "@/lib/og";
 import { JsonLd, canonical, postSchema } from "@/lib/seo";
 
 const LABELS = {
@@ -55,7 +56,6 @@ export const Route = createFileRoute("/journal/$slug")({
         meta: [{ title: "Journal — Coco Atelier" }, { name: "robots", content: "noindex" }],
       };
     const desc = post.excerpt.slice(0, 160);
-    const image = post.cover ? shareImg(post.cover) : undefined;
     const translation = loaderData?.translation;
     const english = post.lang === "en" ? post : translation;
     return {
@@ -70,13 +70,12 @@ export const Route = createFileRoute("/journal/$slug")({
         { property: "article:published_time", content: post.date },
         { property: "article:modified_time", content: post.updated },
         { property: "article:author", content: `${SITE_URL}/studio/` },
-        ...(image
-          ? [
-              { property: "og:image", content: image },
-              { property: "og:image:alt", content: post.coverAlt },
-              { name: "twitter:image", content: image },
-            ]
-          : []),
+        ...ogMeta(`/journal/${post.slug}`, {
+          title: post.title,
+          lines: post.lang === "he" ? ["יומן", "Coco Atelier"] : ["Journal", "Coco Atelier"],
+          photo: post.cover || HERO_PHOTO,
+          alt: post.coverAlt || post.title,
+        }),
         ...(post.draft ? [{ name: "robots", content: "noindex" }] : []),
       ],
       links: translation

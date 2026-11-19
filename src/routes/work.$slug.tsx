@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
-import { projects, img, shareImg, galleryImages, gallerySpans } from "@/lib/projects";
+import { projects, img, galleryImages, gallerySpans } from "@/lib/projects";
+import { ogMeta, HERO_PHOTO } from "@/lib/og";
 import { posts, formatDate } from "@/lib/journal";
 
 export const Route = createFileRoute("/work/$slug")({
@@ -15,7 +16,6 @@ export const Route = createFileRoute("/work/$slug")({
     const p = loaderData?.project;
     if (!p) return { meta: [{ title: "Project — Coco Atelier" }, { name: "robots", content: "noindex" }] };
     const desc = (p.text[0] || `${p.name}${p.underConstruction ? " — under construction" : ""}, an interior project by Coco Atelier, Coral Mesika.`).slice(0, 155);
-    const image = p.cover ? shareImg(p.cover) : "";
     return {
       meta: [
         { title: `${p.name}${p.category ? ` — ${p.category}` : ""} | Coco Atelier` },
@@ -23,8 +23,12 @@ export const Route = createFileRoute("/work/$slug")({
         { property: "og:title", content: `${p.name} — Coco Atelier` },
         { property: "og:description", content: desc },
         { property: "og:type", content: "article" },
-        { name: "twitter:card", content: "summary_large_image" },
-        ...(image ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
+        ...ogMeta(`/work/${p.slug}`, {
+          title: p.name,
+          lines: [p.category, p.location].filter(Boolean),
+          photo: p.cover || HERO_PHOTO,
+          alt: `${p.name}, ${p.category} interior by Coco Atelier, ${p.location}`,
+        }),
       ],
     };
   },

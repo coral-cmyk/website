@@ -1,4 +1,4 @@
-import { SITE_URL, sharePath } from "@/lib/projects";
+import { SITE_URL, sharePath, projects } from "@/lib/projects";
 
 // Link-preview cards (the picture shown when a page is shared on WhatsApp,
 // Facebook, LinkedIn, iMessage…). Each page describes its card here; the build
@@ -19,6 +19,19 @@ export type OgCard = {
 
 export const OG_WIDTH = 1200;
 export const OG_HEIGHT = 630;
+
+// The opening photo of the site (XL APT), also used by pages without a photo of their own.
+export const HERO_PHOTO = projects.find((p) => p.slug === "xl-apt")?.cover ?? "";
+
+export const HOME_CARD: OgCard = {
+  title: "Interior design",
+  lines: ["by Coral Mesika", "Tel Aviv / International"],
+  photo: HERO_PHOTO,
+  alt: "Coco Atelier, interior design by Coral Mesika: the XL APT in Tel Aviv",
+};
+
+// A project's cover photo, for pages that borrow one.
+export const coverOf = (slug: string) => projects.find((p) => p.slug === slug)?.cover || HERO_PHOTO;
 
 // "/" -> "home", "/work/xl-apt" -> "work/xl-apt"
 export const ogKey = (pathname: string) => pathname.replace(/^\/+|\/+$/g, "") || "home";

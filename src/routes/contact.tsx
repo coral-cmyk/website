@@ -1,15 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SOCIAL } from "@/lib/projects";
+import { coverOf, ogMeta } from "@/lib/og";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Coco Atelier" },
-      { name: "description", content: "Start a conversation with Coco Atelier about your residential, hospitality or commercial interior." },
+      { name: "description", content: "Contact Coral Mesika at Coco Atelier, an interior design studio in Tel Aviv, about your home, hotel or office: WhatsApp +972 54 264 5228." },
       { property: "og:title", content: "Contact — Coco Atelier" },
       { property: "og:description", content: "Start a conversation about your next space." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      ...ogMeta("/contact", {
+        title: "Contact",
+        lines: ["Coral Mesika", "+972 54 264 5228"],
+        photo: coverOf("mes-apt"),
+        alt: "Contact Coco Atelier",
+      }),
     ],
   }),
   component: Contact,

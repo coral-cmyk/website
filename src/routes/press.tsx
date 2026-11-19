@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { PRESS } from "@/lib/press";
+import { coverOf, ogMeta } from "@/lib/og";
 
 export const Route = createFileRoute("/press")({
   head: () => ({
@@ -10,7 +11,12 @@ export const Route = createFileRoute("/press")({
       { property: "og:title", content: "Press — Coco Atelier" },
       { property: "og:description", content: "Selected press coverage of Coco Atelier and Coral Mesika." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      ...ogMeta("/press", {
+        title: "Press",
+        lines: ["Coco Atelier", "in the press"],
+        photo: coverOf("monday"),
+        alt: "Press coverage of Coco Atelier and Coral Mesika",
+      }),
     ],
   }),
   component: Press,

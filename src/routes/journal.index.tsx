@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { posts, formatDate, readingMinutes, type JournalPost, PREVIEW } from "@/lib/journal";
 import { img } from "@/lib/projects";
+import { ogMeta, coverOf } from "@/lib/og";
 
 export const Route = createFileRoute("/journal/")({
   head: () => ({
@@ -17,6 +18,12 @@ export const Route = createFileRoute("/journal/")({
         content: "Interior design guides and project notes from Coral Mesika's studio in Tel Aviv.",
       },
       { property: "og:type", content: "website" },
+      ...ogMeta("/journal", {
+        title: "Journal",
+        lines: ["Notes from the studio", "Coco Atelier"],
+        photo: coverOf("cr-suites"),
+        alt: "The Coco Atelier Journal",
+      }),
       // Keep an empty Journal out of search results until the first post is published.
       ...(posts.length === 0 ? [{ name: "robots", content: "noindex" }] : []),
     ],

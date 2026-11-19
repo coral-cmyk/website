@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { img, shareImg, STUDIO_PORTRAIT } from "@/lib/projects";
+import { img, STUDIO_PORTRAIT } from "@/lib/projects";
+import { ogMeta } from "@/lib/og";
 
 const portrait = img(STUDIO_PORTRAIT, 1400);
-const sharePortrait = shareImg(STUDIO_PORTRAIT);
 
 export const Route = createFileRoute("/studio")({
   head: () => ({
@@ -11,10 +11,13 @@ export const Route = createFileRoute("/studio")({
       { name: "description", content: "Coco Atelier is Coral Mesika's interior design practice — residential, hospitality, and commercial interiors, made locally in Tel Aviv and internationally." },
       { property: "og:title", content: "Studio — Coco Atelier" },
       { property: "og:description", content: "Residential, hospitality, and commercial interiors by Coral Mesika — Tel Aviv and international." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: sharePortrait },
-      { name: "twitter:image", content: sharePortrait },
+      { property: "og:type", content: "profile" },
+      ...ogMeta("/studio", {
+        title: "Studio",
+        lines: ["Coral Mesika", "Interior designer"],
+        photo: STUDIO_PORTRAIT,
+        alt: "Coral Mesika, founder of Coco Atelier",
+      }),
     ],
   }),
   component: Studio,

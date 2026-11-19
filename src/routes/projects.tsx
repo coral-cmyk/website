@@ -1,15 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ProjectsGrid } from "@/components/ProjectsGrid";
+import { coverOf, ogMeta } from "@/lib/og";
 
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Coco Atelier" },
-      { name: "description", content: "Residential, hospitality and experimental interiors by Coral Mesika." },
+      { title: "Projects — Interior Design Portfolio | Coco Atelier" },
+      { name: "description", content: "Interior design projects by Coral Mesika: apartments and homes, hotels and suites, offices and lobbies in Tel Aviv, Greece, Italy and California." },
       { property: "og:title", content: "Projects — Coco Atelier" },
       { property: "og:description", content: "Residential, hospitality and experimental interiors by Coral Mesika." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      ...ogMeta("/projects", {
+        title: "Projects",
+        lines: ["Homes, hotels, offices", "Israel and abroad"],
+        photo: coverOf("cr-suites"),
+        alt: "Interior design projects by Coco Atelier",
+      }),
     ],
   }),
   component: ProjectsPage,
