@@ -1,0 +1,171 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-title: "Playfair Display", ui-serif, Georgia, serif;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-bone: var(--bone);
+}
+
+:root {
+  --radius: 0rem;
+  --bone: oklch(0.955 0.008 80);
+  --ink: oklch(0.16 0.006 60);
+  --background: var(--bone);
+  --foreground: var(--ink);
+  --card: oklch(0.93 0.01 78);
+  --card-foreground: var(--ink);
+  --popover: var(--bone);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--bone);
+  --secondary: oklch(0.9 0.012 75);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.9 0.012 75);
+  --muted-foreground: oklch(0.48 0.012 60);
+  --accent: oklch(0.52 0.06 50);
+  --accent-foreground: var(--bone);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: var(--bone);
+  --border: oklch(0.16 0.006 60 / 18%);
+  --input: oklch(0.16 0.006 60 / 25%);
+  --ring: var(--ink);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--ink); color: var(--bone); }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+@utility link-line {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  &:hover { background-size: 100% 1px; }
+}
+
+@utility img-zoom {
+  overflow: hidden;
+  & img { transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1), filter 1s; filter: grayscale(0.15); }
+  &:hover img { transform: scale(1.04); filter: grayscale(0); }
+}
+
+/* Use the small viewport height on phones: unlike dvh, svh does not change
+   when the browser address bar hides, so the opening photo cannot jump. */
+@utility screen-height {
+  height: 100vh;
+  height: 100svh;
+}
+
+@utility cover-height {
+  height: 92vh;
+  height: 92svh;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+@utility animate-rise {
+  animation: none;
+}
+
+/* A brief, quiet fade for the main navigation pages: opacity only, no movement. */
+@keyframes page-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@utility page-enter {
+  animation: page-enter 0.65s cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-enter { animation: none; }
+}
+
+/* The quiet down-arrow on the opening screen: a slow, small drift. */
+@keyframes drift {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+@utility animate-drift {
+  animation: drift 2.4s ease-in-out infinite;
+}
+
+/* Accessibility menu modes (Israeli standard IS 5568) */
+html.a11y-text-1 { font-size: 112.5%; }
+html.a11y-text-2 { font-size: 125%; }
+html.a11y-text-3 { font-size: 140%; }
+html.a11y-contrast { filter: contrast(1.6); }
+html.a11y-gray { filter: grayscale(1); }
+html.a11y-contrast.a11y-gray { filter: contrast(1.6) grayscale(1); }
+html.a11y-links a { text-decoration: underline !important; outline: 2px solid currentColor; outline-offset: 2px; }
+html.a11y-font, html.a11y-font * { font-family: Arial, Helvetica, sans-serif !important; letter-spacing: 0.02em !important; }
+html.a11y-still *, html.a11y-still *::before, html.a11y-still *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+html.a11y-cursor, html.a11y-cursor * { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cpath d='M4 2l16 10-7 1 4 8-3 1-4-8-6 5z' fill='black' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E") 4 2, auto !important; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Project names: an elegant serif that stays readable (the old thin Didone did not) */
+@utility project-title {
+  font-family: var(--font-title);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+}
+
+/* Big statement lines in the same elegant serif (Studio) */
+@utility serif-display {
+  font-family: var(--font-title);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}

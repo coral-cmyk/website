@@ -1,0 +1,40 @@
+# Roadmap
+
+- [x] Add NET PROJECT, MES Apt and HY Apt as the under-construction first row; move existing rows down; append Brodt Lobby and Monday
+- [x] NET PROJECT / MES APT / HY APT: line under the name now reads Residential · 3 Houses · Netayim, Israel and Residential · Tel Aviv, Israel; the under-construction look stays in the photo area
+- [x] MES APT: cover photo slightly dimmed on the Projects page with centered "UNDER CONSTRUCTION" wording
+- [x] GY APT added: Residential, Glil Yam, Israel — placed last in the list; Coral's photo stored with the site as the cover
+- [x] GY APT photos: 3 interior photos (kitchen/dining cover, living room, bedroom) + floor plan shown apart at a readable size
+- [x] New projects: NET PROJECT, HY APT and Monday all have Coral's cover photos now
+- [x] MONDAY: cover photo stored, line reads Biophilia Center · Offices · Tel Aviv, Israel
+- [x] MONDAY.COM: renamed from MONDAY; Coral's five paragraphs added, size 150 m² taken from her own copy
+- [x] Projects order: MONDAY swapped with COI, GY APT swapped with DUP20
+
+- [x] Landing page: big logo replaces the "Interior Design by Coral Mesika" headline at the same size; that line moves to the small text above it; no other logo on the landing page (top bar, middle)
+- [x] CR Suites added: photos stored with the site, hospitality, Crete Greece, 2026, description drafted for Coral to approve
+- [x] Landing logo 20% smaller and the opening photo less darkened
+- [x] Landing background lightened again to the first-draft treatment; "Tel Aviv / International" now above the logo, "Interior Design by Coral Mesika" at the bottom
+- [ ] CR Suites: size not yet given by Coral (year 2026 only) — ask when she has it
+- [ ] CR Suites: only 2 photos so far (1.jpg, 3.jpg); more welcome
+- [x] Projects page: MEL APT and MH21 removed; order is XL APT, CR SUITES, HB HOUSE, TER, HOA, APPCHARGE, STUDENT APTS 01/02/03, DUP20, COI (driven by PROJECT_ORDER in src/lib/projects.ts)
+- [x] Projects page tidy-up: top-left logo 5% bigger, project numbers removed, count removed from the "Projects" line
+- [ ] Base finished first; Coral will edit all texts afterwards (waiting on user)
+- [ ] All project descriptions: Coral writes them herself, later — leave them empty, don't draft or ask
+- [ ] Project photos: user will send more, one project at a time (waiting on user)
+- [ ] Footer still spells "Coco Atelier" in large letters — ask whether to keep (waiting on user)
+- [ ] APPCHARGE added (Offices, Tel Aviv, 2024, after HOA) — only 1 photo and no description yet; Coral will send more photos + text
+- [ ] STUDENT APTS 01 / 02 / 03 (Residential, Thessaloniki, Greece, own row after APPCHARGE and before DUP20) — each flat has 3 photos stored with the site, living room as cover; text/year/size still to come from Coral per flat
+- [x] EI LIBRARY: 4 photos stored with the site (33.jpg as cover), Library, Tel Aviv, Israel, last in the list
+- [ ] EI LIBRARY: description, year and size still to come from Coral; may want it moved elsewhere in the list
+- [ ] DR CLINIC added (Medical, Petah Tikva, Israel, last in the list) — Coral's photo is the cover; description, year and size still to come
+- [ ] Move coco-atelier.com onto this site and drop Wix: publish, then point the domain's DNS here
+- [x] Project title font: Coral picked option 1 — Playfair Display — already live on the site
+- [x] GY APT place: Coral confirmed Glil Yam — the line under the name and her opening paragraph both say Glil Yam
+- [x] Homepage photo wall: follows the Projects page order (first top-left, second top-right, and so on; stacked in order on a phone)
+- [ ] After coco-atelier.com is live here: Coral cancels/deletes her Wix account (she does this in Wix — we cannot)
+- [x] Soften entrances to Projects, Studio, Press and Contact with a gentle fade
+- [x] Make the page fade more noticeable because Coral could not see the first version
+- [ ] Hide the "Edit with Lovable" badge; the approval card still needs Coral's approval
+- [ ] Add Coral's image beneath the Press title; waiting for the image upload
+- [x] Remove the slow curtain and upward motion; use only a fast, subtle fade
+- [x] Mobile header: keep contacts and all four tabs on one line; use an outline WhatsApp mark matching the phone icon
