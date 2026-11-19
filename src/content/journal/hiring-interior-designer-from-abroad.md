@@ -1,16 +1,16 @@
 ---
 title: Hiring an interior designer from abroad: how it works
-date: 2026-11-24
+date: 2026-11-19
 excerpt: How remote interior design works across borders: the brief, the survey, drawings, sourcing, local contractors and site visits, explained step by step.
 cover: /assets/student-apts-02/student-apts-02-1.jpeg
 coverAlt: Living room in STUDENT APTS 02, Thessaloniki, with a grey sofa, a bronze side table, framed textile art and a door to the balcony
 projects: hb-house, cr-suites, student-apts-02, student-apts-01
-draft: true
+draft: false
 ---
 
 A remote interior designer works with you, and with a team on the ground, through a measured survey, video calls, detailed drawings and photographed decisions, so you do not need to be in the same city, or even the same time zone, as your home. It works well when the drawings are precise enough for a local contractor to build from without guesswork, and when someone you trust can stand on site at the moments that matter. The method is the same for a New Yorker with an apartment in Tel Aviv and for an Israeli family renovating a house in Greece.
 
-Coco Atelier is the interior design studio of Coral Mesika, based in Tel Aviv and working internationally. Our projects include eight sea-facing suites on [Crete](/work/cr-suites), student apartments in [Thessaloniki](/work/student-apts-01), a [two-storey house on the water in Huntington Beach, California](/work/hb-house), and concept work for a historic villa in Turin and a restaurant at Malga Costa in the Italian Alps. This guide explains how an international interior design project actually runs, and what to ask before you hire someone to design a home you cannot visit every week.
+Coco Atelier is the interior design studio of Coral Mesika, based in Tel Aviv and working internationally. Our projects include eight sea-facing suites on [Crete](/work/cr-suites), student apartments in [Thessaloniki](/work/student-apts-01), a [two-storey house on the water in Huntington Beach, California](/work/hb-house), designed from Tel Aviv, a hotel in a historic villa in Turin and a restaurant at Malga Costa in the Italian Alps. This guide explains how an international interior design project actually runs, and what to ask before you hire someone to design a home you cannot visit every week.
 
 ## Can an interior designer really work remotely?
 
@@ -33,13 +33,11 @@ The first conversations happen on video. You talk about how you live, who uses t
 
 ### 2. A measured survey and existing drawings
 
-Nothing reliable can be designed from an estate agent's floor plan. The space needs to be measured accurately: walls, ceiling heights, window and door positions, beams, columns, the position of drains, risers and the electrical board. This is done either by the designer on a visit or by a local surveyor, architect or contractor, backed up by a full photo and video walk-through. Ask for the original building drawings too, if they exist.
-<!-- CORAL: confirm or correct — who carries out the measured survey on Coco Atelier's international projects (you on a site visit, a local surveyor, or the contractor)? -->
+Nothing reliable can be designed from an estate agent's floor plan. The space needs to be measured accurately: walls, ceiling heights, window and door positions, beams, columns, the position of drains, risers and the electrical board. This is done either by the designer on a visit or by a local surveyor, architect or contractor, backed up by a full photo and video walk-through. Ask your designer early who will carry out the survey and who checks it, and ask for the original building drawings too, if they exist.
 
 ### 3. Concept and layout
 
-The designer presents a layout and a design concept: plans, a material and colour direction, reference images and usually 3D views of the main spaces. On a remote project these presentations happen on screen, so 3D views matter more than usual. They let you stand in a room you have not yet seen.
-<!-- CORAL: confirm or correct — what clients receive at concept stage (plans, moodboards, 3D renders) and how presentations are held with clients abroad. -->
+The designer presents a layout and a design concept: plans, a material and colour direction, reference images and usually 3D views of the main spaces. On a remote project these presentations happen on screen, so 3D views matter more than usual. They let you stand in a room you have not yet seen. Ask what you will receive at this stage, and in what format, before you sign.
 
 ### 4. Detailed drawings a contractor can build from
 
@@ -51,19 +49,17 @@ Sourcing across borders is where experience saves real money. Lighting, loose fu
 
 ### 6. Working with a local contractor
 
-The contractor, not the designer, builds the home. On an international project you either hire a contractor the designer recommends or has worked with, or one you find locally whom the designer then briefs. Either way, the contractor prices from the designer's drawings, so quotes are comparable and fewer items are left as "to be decided".
-<!-- CORAL: confirm or correct — do you work with contractors you already know abroad, help clients choose one, or work with the client's own contractor? -->
+The contractor, not the designer, builds the home. On an international project you either hire a contractor the designer recommends or has worked with, or one you find locally whom the designer then briefs. Either way, the contractor prices from the designer's drawings, so quotes are comparable and fewer items are left as "to be decided". On our projects in Greece, Italy and California, Coco Atelier works remotely with local contractors.
 
 ### 7. Site supervision and decisions by photo and video
 
-During construction, decisions are made through photographs, short videos and live video calls from site: checking a stone slab before it is cut, the height of a niche, the colour of a plaster sample in daylight. Regular site reports, with dated photos, keep you and the designer in step. Physical site visits are usually concentrated at the moments when mistakes are hardest to undo: before walls are closed, when joinery is installed, and at handover.
-<!-- CORAL: confirm or correct — how often and at which stages you visit sites abroad, and how site updates are shared with clients. -->
+During construction, decisions are made through photographs, short videos and live video calls from site: checking a stone slab before it is cut, the height of a niche, the colour of a plaster sample in daylight. Regular site reports, with dated photos, keep you and the designer in step. Physical site visits are usually concentrated at the moments when mistakes are hardest to undo: before walls are closed, when joinery is installed, and at handover. On our projects abroad, the studio visits the site at key stages like these; agree with any designer which visits are planned and how site updates will reach you.
 
 ## Time zones, communication and decisions
 
 Time zones sound like the hardest part. In practice they can work in your favour. Tel Aviv is usually seven hours ahead of New York and ten ahead of Los Angeles, shares a clock with Athens for most of the year, and sits one hour ahead of Turin and the rest of Central Europe. A question sent from California in the evening can be answered in Israel the next morning, before the Californian site opens.
 
-What matters more is a clear rhythm:
+Language matters too: Coral works with clients in English and Hebrew, which helps when the owner, the contractor and the family on site do not share a first language. What matters most is a clear rhythm:
 
 | What | Why it helps |
 |---|---|
@@ -77,7 +73,7 @@ Ask any designer you are considering how they handle each of these.
 
 ## Renovating an apartment in Israel from abroad
 
-If you live in the US or Europe and own an apartment in Tel Aviv, there are a few local realities to plan for. Building works in apartment blocks usually require notifying neighbours and, depending on the scope, a permit from the municipality; structural changes and changes to the facade need an engineer and sometimes the agreement of other owners. Most Israeli apartments built in recent decades include a *mamad*, a reinforced safe room, whose walls, door and window cannot be altered. Contractors' working hours are limited by local rules, and the Jewish holidays slow everything down for several weeks each autumn.
+If you live in the US or Europe and own an apartment in Tel Aviv, there are a few local realities to plan for. Building works in apartment blocks usually require notifying neighbours and, depending on the scope, a permit from the municipality; structural changes and changes to the facade need an engineer and sometimes the agreement of other owners. Most Israeli apartments built in recent decades include a *mamad*, a reinforced safe room, whose walls, door and window cannot be altered. Contractors' working hours are limited by local rules, and the Jewish holidays slow everything down for several weeks each autumn. The rules vary by building and municipality, so confirm what applies to your apartment with a local engineer or lawyer before you commit.
 
 You will also need someone local with authority to sign, receive deliveries and give access, whether that is a family member, a property manager or the designer's team. Decide this before work begins, not when the first delivery arrives.
 
@@ -85,7 +81,7 @@ For a fuller picture, read our [guide to renovating an apartment in Tel Aviv](/j
 
 ## International projects from a Tel Aviv studio
 
-Coral Mesika was raised in the United States and is based in Tel Aviv, and the studio's portfolio spans Israel, Greece, Italy and the United States. In Greece, our work includes [CR SUITES](/work/cr-suites), eight high-end suites with private pools on the coast of Crete, and three student apartment projects near the university district of Thessaloniki. In the US, [HB HOUSE](/work/hb-house) is a full renovation of a 1970s two-storey house on the water in Huntington Beach; we tell its story in [A California beach house, designed from Tel Aviv](/journal/california-beach-house-designed-from-tel-aviv). In Italy, HOA is a hotel concept for an 18th-century villa in Turin, and TER, a restaurant expansion concept for Malga Costa, received an A' Design Award and an honorary mention in YAC's Calamity Atelier competition.
+Coral Mesika was raised in the United States and is based in Tel Aviv, and the studio's portfolio spans Israel, Greece, Italy and the United States. In Greece, our work includes [CR SUITES](/work/cr-suites), eight high-end suites with private pools on the coast of Crete, and three student apartment projects near the university district of Thessaloniki. In the US, [HB HOUSE](/work/hb-house) is a full renovation of a 1970s two-storey house on the water in Huntington Beach; we tell its story in [A California beach house, designed from Tel Aviv](/journal/california-beach-house-designed-from-tel-aviv). In Italy, HOA is a hotel in an 18th-century villa in Turin, and TER, a restaurant expansion at Malga Costa, received an A' Design Award and an honorary mention in YAC's Calamity Atelier competition.
 
 ![Studio apartment in STUDENT APTS 01, Thessaloniki, with a timber-lined sleeping alcove, built-in desk and full-height storage](/assets/student-apts-01/student-apts-01-1.jpg)
 

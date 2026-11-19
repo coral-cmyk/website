@@ -1,11 +1,11 @@
 ---
 title: Renovating a holiday home in Greece as a foreign owner
-date: 2026-11-24
+date: 2026-11-19
 excerpt: How to renovate a holiday home in Greece as a foreigner: surveys, permits, local contractors, remote management, climate-proof materials and timing.
 cover: /assets/student-apts-03/student-apts-03-1.jpeg
 coverAlt: Living room in STUDENT APTS 03, Thessaloniki, with curved velvet sofa, red pendant lamp and glass doors to a sunny balcony
 projects: cr-suites, student-apts-01, student-apts-02, student-apts-03
-draft: true
+draft: false
 ---
 
 Foreigners can renovate a house or apartment in Greece much as Greek owners do: you need a Greek tax number, a licensed Greek engineer to check the property and file any permits, and a contractor you can trust while you are away. The projects that go well settle three things before work starts: what the building legally is, what you want it to be (a family retreat, a rental, or both), and who is your eyes on site. This guide to holiday home renovation in Greece is written for Israeli, American and European owners, on the islands, in Athens and in Thessaloniki.
@@ -16,7 +16,7 @@ Coco Atelier has designed in Greece at both ends of the scale: [CR SUITES](/work
 
 The cheapest moment to discover a problem is before you sign. In Greece that means two separate checks.
 
-**Legal status.** Many Greek properties carry additions built without a permit: an enclosed balcony, an extra room on the roof, a converted storage space. A Greek engineer checks the building against its permit and plans, and unauthorised works usually have to be declared and legalised before a sale can complete. Ask your lawyer to confirm the title, any easements, and whether the property sits in a traditional settlement, a protected landscape or an archaeological zone, since each adds approvals and design rules. <!-- CORAL: confirm or correct — keep the description of the engineer's legality check and the legalisation of unauthorised works general; ask your Greek engineer whether you want anything more specific here -->
+**Legal status.** Many Greek properties carry additions built without a permit: an enclosed balcony, an extra room on the roof, a converted storage space. A Greek engineer can check the building against its permit and plans, and unauthorised works may need to be declared and legalised before a sale can go ahead. Ask your lawyer to confirm the title, any easements, and whether the property sits in a traditional settlement, a protected landscape or an archaeological zone, since these can add approvals and design rules. Confirm what applies to your property with a local lawyer and engineer before you commit.
 
 **Physical condition.** Old island houses are usually load-bearing stone with timber floors and roofs. Look for rising damp at the base of walls, rot where beams sit in the masonry, cracked or patched cement renders hiding wet stone, and roof leaks around chimneys. In 1970s and 1980s concrete apartments, which make up much of Athens and Thessaloniki, check for spalling concrete on balconies, old wiring and galvanised plumbing, and single glazing.
 
@@ -24,15 +24,15 @@ A designer can join the viewing to assess what the layout can become, which is t
 
 ## Greek permits: what kind of works need what
 
-Greece separates renovation work into broad categories, and your engineer will tell you which applies.
+Broadly, the more a job touches the structure, the façade or the use of a building, the more approval it needs. The exact categories and procedures are for a local engineer to confirm, but the general pattern looks like this:
 
-- **Interior works that do not touch structure or the façade** (new kitchen, bathrooms, flooring, plaster, joinery) are often the lightest category and may need only a simple notification or none at all.
-- **Small-scale works** (for example some façade repairs, replacing roofs or windows, internal changes in certain buildings) usually go through a small-works approval filed electronically by a licensed engineer.
-- **Structural changes, extensions, new openings in load-bearing walls or a change of use** need a full building permit, which takes longer and requires full engineering drawings.
+- **Interior works that do not touch structure or the façade** (new kitchen, bathrooms, flooring, plaster, joinery) usually sit at the lightest end and may need little or no formal approval.
+- **Smaller external or partial works** (for example some façade repairs, or replacing roofs or windows) may need a simpler approval filed by a licensed engineer.
+- **Structural changes, extensions, new openings in load-bearing walls or a change of use** are likely to need a full building permit, which takes longer and requires full engineering drawings.
 
-<!-- CORAL: confirm or correct — the categories above are deliberately general (e.g. the small-scale works approval, EEMK); please check with a Greek engineer that they are described accurately before publishing -->
+Rules change and differ between areas, so confirm with a local engineer which route your works fall under before you commit to a design or a start date.
 
-On islands and in traditional settlements, expect rules on façade colours, window proportions, roof form and materials, sometimes with review by a local architecture committee. Inside, you usually have far more freedom. Build these timelines into your plan: approvals that look simple on paper can take weeks to months.
+On islands and in traditional settlements, expect rules on façade colours, window proportions, roof form and materials, sometimes with review by a local committee. Inside, you usually have far more freedom. Build these timelines into your plan: approvals that look simple on paper can take weeks to months.
 
 ## Finding local contractors you can trust
 
@@ -50,7 +50,7 @@ Most foreign owners will not be on site more than a few times. The project needs
 
 A workable structure: the engineer handles permits and structural supervision; the contractor builds; the designer owns the drawings, materials and furniture, and answers site questions. Agree a weekly rhythm of photo and video reports, a short call, and a shared list of open decisions. Visit at the moments that matter: before demolition, when walls are set out, when plaster and stone go on, and before handover.
 
-Clear drawings save more time than anything else. Every tile joint, light position and socket height decided in advance is one less WhatsApp message from site at 7am. For more on working at a distance, see [hiring an interior designer from abroad](/journal/hiring-interior-designer-from-abroad). <!-- CORAL: confirm or correct — how you run Greek projects (site visits, working with local engineers and contractors), so we can describe your own process here -->
+Clear drawings save more time than anything else. Every tile joint, light position and socket height decided in advance is one less WhatsApp message from site at 7am. On projects abroad, including in Greece, Coco Atelier works remotely with local contractors and visits the site at key stages, and works with clients in English and Hebrew. For more on working at a distance, see [hiring an interior designer from abroad](/journal/hiring-interior-designer-from-abroad).
 
 ## Climate and materials: building for sun, salt and wind
 
@@ -86,17 +86,17 @@ The STUDENT APTS in Thessaloniki show what compact rental design asks for. The b
 
 ![Studio in STUDENT APTS 01, Thessaloniki: timber-lined bed alcove, full-height cabinetry with integrated desk and a compact kitchen beyond](/assets/student-apts-01/student-apts-01-1.jpg)
 
-Check short-term rental rules before you design for them. Greece requires registration for short-term lets and has tightened rules in some areas and for some types of ownership. <!-- CORAL: confirm or correct — current short-term rental restrictions (registration number, limits in central Athens, rules for Golden Visa properties) should be checked with a Greek lawyer before publishing; keep this general -->
+Check short-term rental rules before you design for them. Short-term lets in Greece generally have to be registered, and the rules have been tightened in some areas and may restrict some types of ownership. Confirm the current position for your property with a local lawyer before you commit.
 
 ## Golden Visa context
 
-Many non-EU buyers come to Greece through the Golden Visa programme, which grants residence in exchange for property investment. The investment thresholds and permitted uses have changed several times and vary by region, so take current advice from a Greek lawyer before you buy. From a design point of view, the questions are the same as for any second home: whether you will live there, let it long-term, or leave it closed for much of the year. <!-- CORAL: confirm or correct — keep Golden Visa wording general; no figures or legal claims -->
+Many non-EU buyers come to Greece through the Golden Visa programme, which grants residence in exchange for property investment. The investment thresholds and permitted uses have changed several times and can differ by location, so confirm the current rules with a local lawyer before you buy. From a design point of view, the questions are the same as for any second home: whether you will live there, let it long-term, or leave it closed for much of the year.
 
 ## Timing around the seasons
 
 Seasons shape a Greek renovation more than most owners expect.
 
-- **Autumn and winter** are the working season on the islands. Crews are available, and some islands restrict noisy building work during the summer tourist months.
+- **Autumn and winter** are the working season on the islands. Crews are more available, and some islands and resort areas may limit building work during the summer tourist months, so check locally.
 - **Spring** fills up fast with owners trying to open by June. Book trades early.
 - **August** is close to a national holiday. Plan nothing critical.
 - **Island logistics** add time: materials and furniture arrive by ferry, and weather can stop crossings.
@@ -107,7 +107,7 @@ A realistic plan buys and designs in spring and summer, gets approvals in late s
 
 ### Can a foreigner renovate a house in Greece?
 
-Yes. Foreign owners renovate under the same rules as Greek owners. You will need a Greek tax number, usually a Greek bank account, and a licensed Greek engineer for anything that requires a permit. Some border areas and islands have extra purchase approvals for non-EU buyers, so check with a lawyer before buying.
+Yes. Foreign owners generally renovate under the same rules as Greek owners. You will need a Greek tax number, usually a Greek bank account, and a licensed Greek engineer for anything that requires a permit. Buying in some border areas may need extra approval for non-EU buyers, so check with a local lawyer before you commit.
 
 ### Do I need a permit to renovate an apartment in Greece?
 
@@ -115,7 +115,7 @@ It depends on the scope. Purely interior work that does not affect structure or 
 
 ### What is the best time of year to renovate a holiday home in Greece?
 
-Autumn through early spring, especially on the islands. Contractors are more available, and some islands limit building work in summer. Aim to finish and furnish by late spring if you want to use or let the house that season.
+Autumn through early spring, especially on the islands. Contractors are more available, and some tourist areas may limit building work in summer, so check locally. Aim to finish and furnish by late spring if you want to use or let the house that season.
 
 ### Can I manage a renovation in Greece from Israel, the US or elsewhere in Europe?
 

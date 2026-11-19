@@ -1,22 +1,20 @@
 ---
 title: XL APT: a vacation feeling in a Tel Aviv tower
-date: 2026-11-24
+date: 2026-11-19
 excerpt: XL APT, a 60 m² apartment in a Tel Aviv residential tower, designed by Coco Atelier to feel like a high-end hotel suite, with materials in place of walls.
 cover: /assets/xl-apt/850_3625aaa.jpg
 coverAlt: Open-plan XL APT in Tel Aviv, with an oak slat screen between a stone-clad shower and the bedroom beyond
 projects: xl-apt
-draft: true
+draft: false
 ---
 
-XL APT is a 60 m² apartment in a residential tower in Tel Aviv, renovated by Coco Atelier in 2021 for a client who wanted his home to feel like a vacation: specifically, like a high-end hotel suite designed for a bachelor. The answer was an open floor plan with almost no walls, where changes in material, running from floor to ceiling, do the work of dividing the space, and custom millwork on every wall hides the storage. It is a useful case study for anyone planning Tel Aviv apartment interior design in a tower, where floor area is limited but light and views are not.
+XL APT is a 60 m² apartment in a residential tower in Tel Aviv, renovated by Coco Atelier in 2021 for a client who wanted a vacation home that would feel like a high-end hotel suite, suited for a bachelor. The answer was an open floor plan with almost no walls, where changes in material, running from floor to ceiling, do the work of dividing the space, and custom millwork on every wall hides the storage. It is a useful case study for anyone planning Tel Aviv apartment interior design in a tower, where floor area is limited but light and views are not.
 
-## The brief: a hotel suite, every day
+## The brief: a vacation home like a hotel suite
 
-The starting point came from the client: a home with the feeling of a high-end hotel suite. Read as a design brief, that points away from the usual small-apartment layout of a corridor and a row of closed rooms, and towards one generous space where the bed, the bath and the lounge belong together and every detail has been thought through.
+The starting point came from the client: a vacation home with the feeling of a high-end hotel suite. Read as a design brief, that points away from the usual small-apartment layout of a corridor and a row of closed rooms, and towards one generous space where the bed, the bath and the lounge belong together and every detail has been thought through.
 
 That brief suits a tower apartment well. A high floor brings big windows and long views, here across neighbouring towers and out to the sea. Breaking 60 m² into small rooms would have cut most of the space off from that light. Keeping it open lets every part of the apartment share it.
-
-<!-- CORAL: confirm or correct — was XL APT the client's main home or a second home? The site says he wanted "a vacation home"; the article currently says he wanted his home to feel like a vacation. -->
 
 ![Living area of XL APT, a Tel Aviv tower apartment: floor-to-ceiling windows with a sea view, a houndstooth daybed, a dark kitchen island and an oak slat screen beside the open bathroom](/assets/xl-apt/850_3754aaa.jpg)
 
@@ -40,8 +38,6 @@ The bathroom is where the hotel reference is clearest. Instead of a closed room,
 
 The photos show a shower wall and niche clad in a grey stone veined with ochre and gold, a basin carved as a solid block of the same stone, a freestanding brushed steel shower column and taps with red wheel-shaped valve handles. The red is small, but it is one of the details that gives the apartment its character, picking up the colours of the large graffiti-style artwork in the kitchen. Just beyond, a flush white door is set into the fluted wall.
 
-<!-- CORAL: confirm or correct — the flush door beside the shower: is it the WC? If so we can name it. -->
-
 ![Stone basin carved from grey and ochre veined stone in XL APT, Tel Aviv, with a brushed steel tap, red valve handles and oak slats behind](/assets/xl-apt/850_3810aaa.jpg)
 
 ## Custom millwork on every wall
@@ -52,7 +48,7 @@ The millwork also gives what the project description calls "layers of texture on
 
 ## The kitchen as a bar
 
-For a client who wanted a vacation feeling, the kitchen is designed less like a workroom and more like a hotel bar. A long island with a heavily veined stone top and a dark fluted front faces the living area, with woven stools along one side and the hob set into the same counter. Brass cylinder lights hang in pairs from the ceiling. Behind it, glass-fronted wine fridges and a digital clock sit in the dark timber wall, next to a large, colourful graffiti-style artwork that is repeated in a mirrored panel to the right.
+For a client who wanted a vacation home, the kitchen is designed less like a workroom and more like a hotel bar. A long island with a heavily veined stone top and a dark fluted front faces the living area, with woven stools along one side and the hob set into the same counter. Brass cylinder lights hang in pairs from the ceiling. Behind it, glass-fronted wine fridges and a digital clock sit in the dark timber wall, next to a large, colourful graffiti-style artwork that is repeated in a mirrored panel to the right.
 
 ![Kitchen island in XL APT, Tel Aviv, with a veined stone top, fluted dark front, woven stools, wine fridges and a large graffiti-style artwork](/assets/xl-apt/850_3763aaa.jpg)
 

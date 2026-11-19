@@ -1,11 +1,11 @@
 ---
 title: How to choose an interior designer in Tel Aviv
-date: 2026-11-24
+date: 2026-11-19
 excerpt: How to choose an interior designer in Tel Aviv: what to look for in a portfolio, what to ask, how fees work and the red flags worth noticing early.
 cover: /assets/xl-apt/850_3754aaa.jpg
 coverAlt: Open living space in XL APT, a Tel Aviv tower apartment, with a timber slat partition and a city and sea view
 projects: xl-apt, mes-apt, hy-apt
-draft: true
+draft: false
 ---
 
 The right interior designer in Tel Aviv is someone whose finished work includes apartments like yours, who puts scope and fees in writing before you sign, and who understands how this city builds: the developer's changes window in a new tower, the limits of a 1930s Bauhaus walk-up, the safe room you cannot move. After that, choose the person you can speak to honestly about money, taste and the way you actually live. This guide walks through each of those checks, so you can compare designers on more than their Instagram feed.
@@ -43,17 +43,17 @@ These apartments often have sound proportions but tired services. A good designe
 
 ![The living space of XL APT, a 60 m² Tel Aviv apartment: open plan, divided by a timber slat partition and a change of floor finish](/assets/xl-apt/850_3625aaa.jpg)
 
-At Coco Atelier, [XL APT](/work/xl-apt) is a good example of how much a small apartment can carry. The 60 m² flat in Tel Aviv was designed for a client who wanted it to feel like a high-end hotel suite. The layout stays open, divided only by transitions of material that run from floor to ceiling, and custom millwork covers the walls, hiding storage behind layers of texture.
+At Coco Atelier, [XL APT](/work/xl-apt) is a good example of how much a small apartment can carry. The 60 m² flat in Tel Aviv was designed for a client who wanted a vacation home that would feel like a high-end hotel suite. The layout stays open, divided only by transitions of material that run from floor to ceiling, and custom millwork covers the walls, hiding storage behind layers of texture.
 
 ## How to read an interior design portfolio
 
 A portfolio tells you more than taste if you know where to look.
 
-- **Finished photographs against renders.** Renders show intentions. Photographs of completed, lived-in spaces show that the designer can get a contractor to build what was drawn. Both have a place, but you want to see built work.
+- **Built work, not only ideas.** Portfolios mix photographs and renders, and both have a place. What matters is whether the project was built: ask which of the spaces you are looking at were completed, and how closely the finished room matches what you see.
 - **Projects at your scale.** A designer who has done large villas may approach a 55 m² flat very differently. Look for work of a similar size and budget.
 - **Close-up details.** Look at where the stone meets the timber, how a cabinet door closes against a wall, how lighting is recessed. Details are where design quality is decided and where budgets are protected or lost.
 - **Range.** A portfolio where every project looks the same may mean the designer has one answer. A portfolio with a clear sensibility but different solutions usually means they listened to each client.
-- **Press and recognition.** Useful as a signal, not a substitute. Coco Atelier's XL APT was featured in *Portfolio* in 2022, and the studio's TER restaurant concept received an A' Design Award for Interior Space & Exhibition Design (2019–2020). Ask any designer you meet what they were responsible for in the work they show.
+- **Press and recognition.** Useful as a signal, not a substitute. Coco Atelier's XL APT was featured in *Portfolio* in 2022, and the studio's TER restaurant in Malga Costa, Italy, received an A' Design Award for Interior Space & Exhibition Design (2019–2020). Ask any designer you meet what they were responsible for in the work they show.
 
 ## Questions to ask at the first meeting
 
@@ -76,18 +76,18 @@ There is no fixed tariff for interior design in Israel. Designers commonly charg
 
 Whatever the model, ask for it in writing, with the scope of each stage, the number of site visits and what counts as extra work. For a detailed look at what drives the number, read [What does an interior designer cost in Israel?](/journal/interior-designer-cost-israel).
 
-At Coco Atelier, fees are agreed per project once the scope is clear. <!-- CORAL: confirm or correct — how do you structure your fees (per m², per stage, fixed, hourly for consultations)? Say only as much as you are comfortable stating publicly. -->
+Be wary of a firm price quoted over the phone before anyone has seen your plan. A good designer will want to understand the apartment, the scope and your expectations first, and then put a proposal in writing.
 
 ## Buying in Tel Aviv from abroad
 
 Many Tel Aviv apartments belong to owners who live in New York, London or Paris for most of the year. If that is you, the designer's ability to run the project without you on site matters as much as their style. Ask how decisions are presented remotely, who checks the work on site, how photographs and progress reports reach you, and how payments to contractors and suppliers are approved.
 
-Coral Mesika was raised in the United States and is based in Tel Aviv, and the studio's work includes a full-house renovation in Huntington Beach, California. <!-- CORAL: confirm or correct — can we say you work with clients in English and Hebrew (and any other languages)? Is there anything specific about how you run projects for owners abroad that you want stated here? --> If you are planning from overseas, [Hiring an interior designer from abroad](/journal/hiring-interior-designer-from-abroad) goes through the practicalities in more detail.
+Coral Mesika was raised in the United States, is based in Tel Aviv and works with clients in English and Hebrew. Remote projects run in both directions: [HB HOUSE](/work/hb-house), a full-house renovation in Huntington Beach, California, was designed from Tel Aviv. On projects abroad, the studio works remotely with local contractors and visits the site at key stages. If you are planning from overseas, [Hiring an interior designer from abroad](/journal/hiring-interior-designer-from-abroad) goes through the practicalities in more detail.
 
 ## Red flags worth noticing early
 
 - **No written scope.** If stages, revisions and site visits are vague, disagreements later are almost certain.
-- **Only renders.** Fine for a new studio, but you should know whether the designer has seen a project through to completion.
+- **No built work.** A new studio may not have much yet, but you should know whether the designer has seen a project through to completion.
 - **A finished design before a single question.** Good design begins with how you live: who cooks, who works from home, what you own and want to keep.
 - **Pressure to decide fast.** Lead times in Israel can be long for imported tiles, stone and furniture, but a good designer plans around that rather than rushing you.
 - **Unclear commissions.** Ask directly whether the designer receives commissions from suppliers or contractors, and how that is handled.

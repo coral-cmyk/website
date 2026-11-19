@@ -1,11 +1,11 @@
 ---
 title: Boutique hotel and suites design: what guests remember
-date: 2026-11-24
+date: 2026-11-19
 excerpt: Boutique hotel interior design that guests remember and operators can run: arrival, the room as a story, lighting, acoustics, durability and FF&E.
 cover: /assets/cr-suites/cr-suites-3.jpg
 coverAlt: Suite at CR SUITES, Crete, with linen sofa, walnut swivel console and full-height glass opening onto a terrace, infinity pool and the sea
 projects: cr-suites, hoa, ter
-draft: true
+draft: false
 ---
 
 Good boutique hotel interior design comes down to a few moments a guest will carry home: the first view on arrival, one strong idea in the room, light that flatters the evening, and a quiet night's sleep. Everything else, from the stone on the walls to the hinges on the wardrobe, exists to protect those moments and to let housekeeping turn the room quickly. This guide sets out how a hospitality interior designer approaches a small hotel or a collection of suites, drawing on Coco Atelier's work in Crete, Turin and the Italian Alps.
@@ -34,7 +34,7 @@ The rooms guests remember usually have one clear idea, and every decision follow
 
 The palette then supports the story rather than competing with it: dry-stacked limestone, white painted timber rafters, warm walnut, with brass and pebble-shaped mirrors softening the light. Materials run unbroken from floor to ceiling, so the room reads as one surface.
 
-In a historic building the story is often already there. [HOA](/work/hoa), a 2020 hotel concept for an 18th-century Baroque villa in Turin, set out to complement the existing architecture without competing with it, using gentle curves inside and out to make the historic rooms feel relatable to a modern guest. The concept renders show a marble floor laid in a triangular pattern, a slim metal-framed partition that holds the TV on a pole, and a bath zone behind glass and sheer curtain inside the bedroom itself.
+In a historic building the story is often already there. [HOA](/work/hoa), a 2020 hotel project in an 18th-century Baroque villa in Turin, was designed to complement the existing architecture without competing with it, using gentle curves inside and out to make the historic rooms feel relatable to a modern guest. Renders of the finished rooms show a marble floor laid in a triangular pattern, a slim metal-framed partition that holds the TV on a pole, and a bath zone behind glass and sheer curtain inside the bedroom itself.
 
 ## Durability and housekeeping: design for the person with the trolley
 
@@ -80,9 +80,9 @@ Insulation between rooms is a construction decision; it belongs in the drawings 
 
 Guests travel to be somewhere. The interior should make that obvious without souvenir clichés, using regional materials and the trades that know them.
 
-CR SUITES uses dry-stacked limestone, the language of Cretan field walls, as a finished interior surface. [TER](/work/ter), a 2019 restaurant expansion concept of 200 m² for Malga Costa in northern Italy, takes the same principle further: designed for the Arte Sella art forest after a storm destroyed much of it, it reads as a massive boulder in the forest, with stone as both exterior and interior base material. TER received the A' Design Award for Interior Space & Exhibition Design (2019–2020) and an honorary mention in YAC's Calamity Atelier competition.
+CR SUITES uses dry-stacked limestone, the language of Cretan field walls, as a finished interior surface. [TER](/work/ter), a 200 m² restaurant expansion completed in 2019 for Malga Costa in northern Italy, takes the same principle further: designed for the Arte Sella art forest after a storm destroyed much of it, it reads as a massive boulder in the forest, with stone as both exterior and interior base material. TER received the A' Design Award for Interior Space & Exhibition Design (2019–2020) and an honorary mention in YAC's Calamity Atelier competition.
 
-![TER restaurant concept at Malga Costa, Italy: stone-walled dining room around a glazed central courtyard with an open fire for cooking](/assets/wix/0fbf64_902a7862376a4b459dcf26e685bf2ad0.jpg)
+![Render of the dining room in TER, Malga Costa, Italy: stone-walled dining room around a glazed central courtyard with an open fire for cooking](/assets/wix/0fbf64_902a7862376a4b459dcf26e685bf2ad0.jpg)
 
 TER's plan circles around an open outdoor space for campfire cooking, so every table can watch the chefs. That is a hospitality lesson as much as an architectural one: give people something to gather around.
 
@@ -107,13 +107,15 @@ Before drawings begin, the owner or operator should be able to answer:
 5. What is the opening date, and what is the date that cannot move?
 6. Which brand, if any, sets standards the design must meet?
 
-A clear brief prevents the most expensive kind of change: the one made after joinery is ordered. <!-- CORAL: confirm or correct — how you take a hospitality brief with an operator (workshop, questionnaire, site visit) so we can describe it as your process -->
+A clear brief prevents the most expensive kind of change: the one made after joinery is ordered. A good designer will work through these questions with you, and with the operator if there is one, before any drawing starts, and walk the building with the people who will run it.
 
 ## Budget per key and FF&E
 
 Hotel budgets are usually discussed per key: the total cost divided by the number of rooms. It is a useful way to compare properties, but the number depends on the building's condition, location, the level of finish and how much of the public space is included.
 
-FF&E (furniture, fixtures and equipment) is the part of the budget an interior designer controls most directly. It covers beds, seating, joinery, lighting, curtains, mirrors, rugs and artwork, often from several countries with long lead times. Plan it as a schedule from the start, with sample approvals, lead times and a delivery plan tied to the opening date. Custom pieces like a swivelling console are what make a room memorable, so protect a share of the budget for them and save elsewhere on items guests never touch. <!-- CORAL: confirm or correct — whether Coco Atelier manages FF&E procurement and installation for hospitality clients, or specifies only -->
+FF&E (furniture, fixtures and equipment) is the part of the budget an interior designer controls most directly. It covers beds, seating, joinery, lighting, curtains, mirrors, rugs and artwork, often from several countries with long lead times. Plan it as a schedule from the start, with sample approvals, lead times and a delivery plan tied to the opening date. Custom pieces like a swivelling console are what make a room memorable, so protect a share of the budget for them and save elsewhere on items guests never touch.
+
+Ask your designer at the outset whether they specify FF&E only or also manage ordering, deliveries and installation. Both arrangements work, but someone has to own the schedule, check every delivery against the specification and be on site when the rooms are dressed.
 
 ## Frequently asked questions
 

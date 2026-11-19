@@ -1,11 +1,11 @@
 ---
 title: Renovating an apartment in Tel Aviv: the complete guide
-date: 2026-11-24
+date: 2026-11-19
 excerpt: A guide to Tel Aviv apartment renovation: old buildings and towers, permits, the va'ad bayit, noise hours, order of works, contractors and budget.
 cover: /assets/xl-apt/850_3625aaa.jpg
 coverAlt: XL APT in a Tel Aviv tower, with a timber slat partition between the stone-clad shower and the open bedroom and living space
 projects: xl-apt, mes-apt, hy-apt
-draft: true
+draft: false
 ---
 
 A Tel Aviv apartment renovation succeeds or fails before the first wall comes down. The building you live in (a 1930s Bauhaus walk-up or a new tower), the rules of its building committee, whether your works need a permit, and the order in which design decisions are made shape the cost and timeline more than any single material choice. Plan those, hire a contractor against proper drawings, keep a contingency, and the months of works become manageable. This guide follows the order you will meet them.
@@ -51,13 +51,13 @@ A permit, or at least a professional review, is usually needed once the works go
 - **Conservation buildings**, where even small exterior changes are regulated
 - Merging or splitting apartments
 
-<!-- CORAL: confirm or correct — this is the general Israeli rule (works exempt from a permit vs works that need one). Do you want to add anything specific to Tel Aviv-Yafo (e.g. how you handle permits, whether you work with a licensed architect/engineer for permit submissions, or a note on conservation buildings)? -->
+Rules change and each building is different, so confirm with a local architect, engineer or lawyer whether your specific works need a permit before you commit to the design. Permit applications are normally prepared by a licensed architect or engineer; a good interior designer will flag early which parts of the plan need one.
 
 A structural engineer's sign-off is wise for any change to walls whose role you are not certain of, permit or not. In older buildings, also ask whether the building is in an urban-renewal process (strengthening or redevelopment); it can change what is worth investing in.
 
 ## Noise hours and working times
 
-Israel regulates construction noise in residential buildings. As a general rule, noisy works are limited to weekday working hours, roughly from the morning until the early evening, with no noisy work on Shabbat or Jewish holidays and shorter hours on Fridays and holiday eves. Some municipalities and many buildings add an afternoon quiet break. <!-- CORAL: confirm or correct — exact noise hours for renovation works in Tel Aviv (weekday start/end, afternoon break, Friday hours), or keep it general as written? -->
+Israel regulates construction noise in residential buildings. As a general rule, noisy works are limited to weekday working hours, roughly from the morning until the early evening, with no noisy work on Shabbat or Jewish holidays and shorter hours on Fridays and holiday eves. Some municipalities and many buildings add an afternoon quiet break. Check the current hours with the Tel Aviv-Yafo municipality and your building before the works are scheduled.
 
 In practice, the building's own rules are often stricter than the law, especially in towers. Write the agreed hours into your contract with the contractor so the responsibility for keeping them is theirs.
 

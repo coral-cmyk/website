@@ -1,11 +1,11 @@
 ---
 title: Office design for tech companies in Tel Aviv
-date: 2026-11-24
+date: 2026-11-19
 excerpt: Office interior design in Tel Aviv for tech teams: hybrid work, focus and collaboration zones, acoustics, kitchens, brand and biophilia, from real projects.
 cover: /assets/appcharge/appcharge-1.jpg
 coverAlt: Central lounge of the APPCHARGE offices in Tel Aviv, with mustard sofas, a coffee bar and a wall of windows over the city
 projects: appcharge, monday
-draft: true
+draft: false
 ---
 
 Good office interior design in Tel Aviv starts with how your team actually works now: fewer people at desks on any given day, more meetings that are half in the room and half on a screen, and a real need for both quiet focus and easy collaboration. The office has to earn the commute. For a tech company, that means planning the floor around a mix of work settings, controlling noise, making the kitchen and lounge the social centre, and letting the brand show up in materials and colour rather than only in a logo on the wall.
@@ -79,12 +79,11 @@ At APPCHARGE, a new design language was introduced through custom carpentry, upd
 
 Biophilic design brings natural elements, plants, water, daylight, natural materials and organic forms, into the workplace. Teams tend to respond to it because it changes the pace of a space: it softens sound, adds texture and gives people somewhere to look that is not a screen.
 
-It can be modest, such as planting along a window line, or it can be a destination. The MONDAY.COM project is the second kind: a 150 m² indoor garden within the company's headquarters, designed by Coco Atelier as one of its concept spaces. It is a single space within the headquarters, not the whole office, and it is used for individual meetings, group gatherings, yoga sessions and quiet reflection.
+It can be modest, such as planting along a window line, or it can be a destination. The MONDAY.COM project is the second kind: a 150 m² indoor garden built within the company's headquarters and designed by Coco Atelier, envisioned by the company as one of its concept spaces. It is a single space within the headquarters, not the whole office, and it is used for individual meetings, group gatherings, yoga sessions and quiet reflection.
 
 The design works like a walk through a garden. A central installation of dense greenery is ringed by circular bench seating, and as you move through, smaller pockets open up between layers of foliage: a hanging swing, secluded seats and the waterfall. Hydroponic growing systems were built in so the planting could grow dense in a relatively short time.
 
-![Biophilia centre at MONDAY.COM in Tel Aviv: timber planters, a hanging timber swing and trailing vines from a curved overhead structure](/assets/monday/monday-1.png)
-<!-- CORAL: confirm or correct — are the MONDAY.COM images photos of the finished space or design visualisations? If visualisations, we should say "design images" in the alt text and text. -->
+![Render of the biophilia centre at MONDAY.COM in Tel Aviv: timber planters, a hanging timber swing and trailing vines from a curved overhead structure](/assets/monday/monday-1.png)
 
 If you are considering biophilia at work, plan for maintenance from day one: who waters, feeds and replaces plants, and whether irrigation or hydroponics should be built in. A green space that is not maintained quickly does the opposite of what it was meant to do.
 
@@ -92,7 +91,7 @@ If you are considering biophilia at work, plan for maintenance from day one: who
 
 Not every project needs a full strip-out. APPCHARGE is a good example: the main design challenge was to work within the existing architectural framework and find opportunities to transform the space without a complete renovation. Keeping walls, services and ceilings where they work, and spending instead on carpentry, finishes, lighting and furniture, can change how an office feels for a fraction of the disruption.
 
-Working within an existing floor also changes how the works can be staged, since parts of the office may be in use while others are being refitted. <!-- CORAL: confirm or correct — did Appcharge stay in the office during the works, and was the work phased? If so we can say so here. -->
+Working within an existing floor also changes how the works can be staged, since parts of the office may stay in use while others are being refitted. Ask your designer early how they would sequence the works around your team.
 
 A few principles help when the building is occupied, as it often is in Tel Aviv towers:
 

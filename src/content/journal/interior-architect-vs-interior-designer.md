@@ -1,11 +1,11 @@
 ---
 title: Interior architect, interior designer or architect?
-date: 2026-11-24
+date: 2026-11-19
 excerpt: Interior architect vs interior designer vs architect: what each one does, what Israeli law requires, and who you need for your apartment renovation.
 cover: /assets/gy-apt/gy-apt-1.jpg
 coverAlt: Open kitchen and dining area in GY APT, Glil Yam, with a shelving unit and timber cabinet dividing the space
 projects: gy-apt, xl-apt, net-project
-draft: true
+draft: false
 ---
 
 An architect designs buildings and carries professional responsibility for their structure, envelope and permits. An interior designer designs the inside: layout, finishes, lighting, joinery and furniture. An interior architect works in between, planning interior space in technical depth, from moving partition walls and plumbing points to detailed construction drawings, without designing the building itself. For most apartment renovations that do not touch the structure, an interior designer or interior architect is the person you need; when the work involves structural changes, additions or a building permit, a registered architect or engineer joins the team.
@@ -52,20 +52,20 @@ The plan above, from [GY APT](/work/gy-apt) in Glil Yam, is typical of interior 
 | Protected title in Israel | Yes | No | No |
 | Joinery, lighting, materials, furniture | Sometimes | Yes | Yes |
 
-<!-- CORAL: confirm or correct — the table says interior architects and designers "generally work alongside a licensed professional" for permits. Is that how it works on your projects, and is there anything you would add? -->
+Who may prepare and sign a permit application depends on the type of works, so if your plans go beyond the interior, confirm this with a local architect or engineer before you commit.
 
 ## Interior architect vs interior designer in Israel: what the law says
 
-In Israel, the title architect (*adrichal*, אדריכל) is protected. Only someone registered in the official Registry of Engineers and Architects may use it, and registration requires a recognised academic qualification in architecture. Calling yourself an architect without registration is not permitted.
+In Israel, the title architect (*adrichal*, אדריכל) is protected. Only someone registered in the official Registry of Engineers and Architects may use it. Calling yourself an architect without registration is not permitted.
 
-Interior design and interior architecture are not regulated the same way. There is no state register for them, so anyone may use the titles "interior designer" (*me'atzev/et pnim*) or "interior architect" (*adrichal/it pnim*). That makes the professional's own training, portfolio and references the real measure of their competence. <!-- CORAL: confirm or correct — we have kept the legal statements general (protected title "architect", registry, no state register for interior design). Please confirm this matches your understanding, or tell us what to change. -->
+Interior design and interior architecture are not regulated the same way. There is no state register for them, so anyone may use the titles "interior designer" (*me'atzev/et pnim*) or "interior architect" (*adrichal/it pnim*). That makes the professional's own training, portfolio and references the real measure of their competence.
 
 Two other regulatory points matter in most Israeli renovations:
 
 - **Building permits.** Many interior works, such as a new kitchen, new floors or replacing non-load-bearing partitions, generally do not need a permit. Structural changes, enlarging the apartment, enclosing a balcony or changing the façade usually do, and the application must be prepared and signed by an authorised professional such as an architect or engineer. Rules change, and local committees interpret them, so check before you start.
 - **Structure and the safe room.** Any change to a load-bearing wall needs a structural engineer. The walls, door and window of the mamad (protected space) are subject to Home Front Command requirements and generally cannot be altered by the owner.
 
-In a shared building, works that affect common property, such as the façade, the roof or the stairwell, also typically require the consent of the other owners. For the wider picture, see our [guide to renovating an apartment in Tel Aviv](/journal/tel-aviv-apartment-renovation-guide).
+In a shared building, works that affect common property, such as the façade, the roof or the stairwell, also typically require the consent of the other owners. These are general points, not legal advice: confirm what applies to your building with a local lawyer or engineer before you commit. For the wider picture, see our [guide to renovating an apartment in Tel Aviv](/journal/tel-aviv-apartment-renovation-guide).
 
 ## Architect or interior designer for an apartment renovation?
 
@@ -83,11 +83,11 @@ If you are not sure which group your project falls into, a first meeting with an
 
 On larger projects the professions are complementary rather than competing. The architect secures the permit and resolves the building; the interior designer or interior architect shapes the experience of being inside it. Problems arise mainly when the interior professional arrives late, after window positions, ceiling heights and plumbing risers are already fixed.
 
-[NET PROJECT](/work/net-project), three houses currently under construction in Netayim, is one of Coco Atelier's projects at this scale. <!-- CORAL: confirm or correct — what is the studio's role on NET PROJECT, and is there an architect on the project you work alongside? One sentence on how the collaboration works would make this section much stronger. -->
+[NET PROJECT](/work/net-project), three houses currently under construction in Netayim, is one of Coco Atelier's projects at this scale. On any project of this kind, agree at the start who produces which drawings and who makes which decisions, so that nothing falls between the architect and the interior designer.
 
 ## Where Coco Atelier fits
 
-Coral Mesika is an interior designer and interior architect, not a registered architect. Coco Atelier, her Tel Aviv studio, designs residential, hospitality and commercial interiors in Israel and abroad, from apartments in Tel Aviv and Glil Yam to offices for tech companies and suites on Crete. <!-- CORAL: confirm or correct — your training and qualifications in interior architecture/design, stated as you would like them to appear. --> When a project needs a permit or structural work, the studio works with the architects and engineers who carry that responsibility. <!-- CORAL: confirm or correct — do you bring in your own architects/engineers, work with the client's, or both? -->
+Coral Mesika is an interior designer and interior architect, not a registered architect. Coco Atelier, her Tel Aviv studio, designs residential, hospitality and commercial interiors in Israel and abroad, from apartments in Tel Aviv and Glil Yam to offices for tech companies and suites on Crete. The studio's work has received an A' Design Award for Interior Space & Exhibition Design (2019–2020). When a project needs a permit or structural work, a registered architect or engineer carries that responsibility, and the interior design is coordinated with their drawings.
 
 ## Frequently asked questions
 

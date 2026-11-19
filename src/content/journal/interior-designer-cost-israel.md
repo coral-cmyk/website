@@ -1,11 +1,11 @@
 ---
 title: What does an interior designer cost in Israel?
-date: 2026-11-24
+date: 2026-11-19
 excerpt: How interior designers in Israel charge (per m², fixed fee, hourly, percentage), what moves the price, and where a designer saves you money.
 cover: /assets/gy-apt/gy-apt-1.jpg
 coverAlt: Open kitchen and dining area in GY APT, Glil Yam, with a white shelving unit and oak cabinet dividing the space
 projects: gy-apt, xl-apt
-draft: true
+draft: false
 ---
 
 The cost of an interior designer in Israel depends less on the designer's name than on what you ask them to do. Most designers charge in one of five ways: per square metre, a fixed project fee, by the hour, a percentage of the works, or a one-off consultation. The price then moves with the size of the home, the depth of the renovation, how much custom joinery is drawn, and whether the designer stays on site until the last handle is fitted.
@@ -40,7 +40,7 @@ A single paid meeting at your home: a walk-through, layout advice, colours, mate
 
 ### A general picture of the market
 
-Designers in Israel are free to set their own prices, and quotes for the same apartment can differ several times over. As a broad, general orientation only: per-m² fees for full design of a home are commonly quoted in the low to mid hundreds of shekels per square metre, and hourly rates in the hundreds of shekels. <!-- CORAL: confirm or correct — do you want any general market range here (per m², hourly, consultation), or should we remove numbers entirely? Nothing here describes Coco Atelier's own fees. --> Always check whether a quote includes VAT, since many Israeli professionals quote before VAT.
+Designers in Israel are free to set their own prices, and quotes for the same apartment can differ several times over. A low figure per m² can hide a thin scope, and a higher one can include drawings, site visits and sourcing that you would otherwise pay for separately, so set the number against what it buys. Always check whether a quote includes VAT, since many Israeli professionals quote before VAT.
 
 ## What actually moves the cost of an interior designer in Israel
 
@@ -89,7 +89,7 @@ When comparing quotes, compare what you receive, not just the number. A full des
 - Site visits during works
 - Furniture and lighting selection, and sometimes ordering
 
-<!-- CORAL: confirm or correct — should we list what a Coco Atelier full-design project includes (drawings, 3D, number of site visits, sourcing), or keep this as the general market list? -->
+Ask each designer which of these items their proposal covers, and which are charged separately.
 
 ## Where an interior designer saves you money
 
