@@ -9,7 +9,7 @@ export const Route = createFileRoute("/privacy")({
       {
         name: "description",
         content:
-          "How Coco Atelier handles contact details, accessibility preferences and website analytics, including rights under Israeli privacy law.",
+          "How Coco Atelier handles contact details, accessibility preferences and website hosting, including rights under Israeli privacy law.",
       },
       { property: "og:title", content: "Privacy Policy — Coco Atelier" },
       {
@@ -95,20 +95,13 @@ function PrivacyPolicy() {
         </section>
 
         <section className={section} aria-labelledby="privacy-analytics">
-          <h2 id="privacy-analytics" className={heading}>Website analytics</h2>
+          <h2 id="privacy-analytics" className={heading}>Website hosting and analytics</h2>
           <p>
-            Lovable provides this website&apos;s visitor analytics. It uses no cookies, stores nothing
-            on your device, does not keep IP addresses and does not identify visitors. Lovable
-            collects this data for Coco Atelier. <a className="link-line" href="https://lovable.dev/privacy" target="_blank" rel="noreferrer">Lovable&apos;s privacy policy</a> explains how it handles it.
+            This website does not use visitor analytics or tracking tools. It is hosted by GitHub
+            Pages. To deliver each page, GitHub receives the technical information that every
+            browser sends, such as your IP address, browser type and the page requested, and may
+            keep it in server logs for security purposes. <a className="link-line" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">GitHub&apos;s privacy statement</a> explains how it handles this information.
           </p>
-          <p>
-            It records the pages visited, where visitors came from, their country, browser,
-            operating system and device type, how long they stay, how fast pages load, errors, and
-            which buttons and links they click. Clicks and the other activity listed here are
-            recorded for every visit. Page visits, time on page, page speed and errors are recorded
-            for every visitor, without cookies and without identifying anyone.
-          </p>
-          <p>Detailed data is kept for 90 days and daily summaries for a year.</p>
         </section>
 
         <section className={section} aria-labelledby="privacy-storage">
@@ -221,19 +214,12 @@ function PrivacyPolicy() {
         </section>
 
         <section className={section} aria-labelledby="he-privacy-analytics">
-          <h3 id="he-privacy-analytics" className={heading}>סטטיסטיקת שימוש באתר</h3>
+          <h3 id="he-privacy-analytics" className={heading}>אחסון האתר וסטטיסטיקת שימוש</h3>
           <p>
-            Lovable מספקת את שירות סטטיסטיקת השימוש באתר. השירות אינו משתמש בעוגיות, אינו שומר דבר
-            במכשיר של המבקרים, אינו שומר כתובות IP ואינו מזהה מבקרים. Lovable אוספת נתונים אלה
-            עבור Coco Atelier. <a className="link-line" href="https://lovable.dev/privacy" target="_blank" rel="noreferrer">מדיניות הפרטיות של Lovable</a> מסבירה כיצד היא מטפלת בהם.
+            האתר אינו משתמש בכלי סטטיסטיקה או מעקב אחר מבקרים. האתר מתארח ב־GitHub Pages. כדי
+            להציג כל דף, GitHub מקבלת את המידע הטכני שכל דפדפן שולח, כגון כתובת IP, סוג הדפדפן
+            והדף המבוקש, ועשויה לשמור אותו ביומני שרת לצורכי אבטחה. <a className="link-line" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noreferrer">הצהרת הפרטיות של GitHub</a> מסבירה כיצד היא מטפלת במידע זה.
           </p>
-          <p>
-            הנתונים כוללים דפים שנצפו, מקור ההגעה, מדינה, דפדפן, מערכת הפעלה וסוג מכשיר, משך
-            שהייה, מהירות טעינת דפים, שגיאות, והכפתורים והקישורים שלחצו עליהם. הקליקים ושאר
-            הפעילות המפורטת נרשמים בכל ביקור. ביקורים בדפים, משך שהייה, מהירות טעינה ושגיאות
-            נרשמים אצל כל מבקר, ללא עוגיות וללא זיהוי אישי.
-          </p>
-          <p>מידע מפורט נשמר למשך 90 יום, וסיכומים יומיים נשמרים למשך שנה.</p>
         </section>
 
         <section className={section} aria-labelledby="he-privacy-storage">
