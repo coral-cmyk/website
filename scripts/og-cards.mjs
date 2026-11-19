@@ -43,6 +43,41 @@ export async function drawCard(card, { photoFile, logoFile }) {
     .jpeg({ quality: 88 })
     .toBuffer();
   const logo = readFileSync(logoFile);
+
+  if (card.logoOnly) {
+    // Homepage card: like the site's opening screen, the photo with the large
+    // bone logo on the left over a soft shade, and nothing else.
+    const logoWidth = 540;
+    const logoHeight = Math.round((logoWidth * 699) / 1358);
+    const tree = h(
+      "div",
+      { width: W, height: H, display: "flex", position: "relative" },
+      [
+        { type: "img", props: { src: dataUri(photo, "image/jpeg"), width: W, height: H, style: { position: "absolute", left: 0, top: 0 } } },
+        h("div", {
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: W,
+          height: H,
+          backgroundImage:
+            "linear-gradient(to right, rgba(20,18,16,0.55) 0%, rgba(20,18,16,0.25) 50%, rgba(20,18,16,0.05) 100%)",
+        }),
+        {
+          type: "img",
+          props: {
+            src: dataUri(logo, "image/png"),
+            width: logoWidth,
+            height: logoHeight,
+            style: { position: "absolute", left: 70, top: Math.round((H - logoHeight) / 2) + 30 },
+          },
+        },
+      ],
+    );
+    const svg = await satori(tree, { width: W, height: H, fonts: FONTS });
+    return sharp(Buffer.from(svg)).jpeg({ quality: 82, mozjpeg: true }).toBuffer();
+  }
+
   const rtl = /[֐-׿]/.test(card.title);
   const size = titleSize(card.title);
 

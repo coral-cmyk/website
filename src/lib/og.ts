@@ -15,6 +15,9 @@ export type OgCard = {
   photo: string;
   // Describes the card for people using screen readers.
   alt: string;
+  // Homepage style: the photo with the large COCO ATELIER logo, as on the site's
+  // opening screen, and no text (title and lines are ignored).
+  logoOnly?: boolean;
 };
 
 export const OG_WIDTH = 1200;
@@ -24,10 +27,11 @@ export const OG_HEIGHT = 630;
 export const HERO_PHOTO = projects.find((p) => p.slug === "xl-apt")?.cover ?? "";
 
 export const HOME_CARD: OgCard = {
-  title: "Interior design",
-  lines: ["by Coral Mesika", "Tel Aviv / International"],
+  title: "Coco Atelier",
+  lines: [],
   photo: HERO_PHOTO,
-  alt: "Coco Atelier, interior design by Coral Mesika: the XL APT in Tel Aviv",
+  alt: "Coco Atelier logo over the XL APT in Tel Aviv",
+  logoOnly: true,
 };
 
 // A project's cover photo, for pages that borrow one.
@@ -38,10 +42,21 @@ export const ogKey = (pathname: string) => pathname.replace(/^\/+|\/+$/g, "") ||
 
 export const ogImageUrl = (pathname: string) => `${SITE_URL}/og/${ogKey(pathname)}.jpg`;
 
+// Short, stable fingerprint of a card's content (and of the card design version).
+const CARD_DESIGN = 2;
+function cardVersion(card: OgCard) {
+  const text = JSON.stringify([CARD_DESIGN, card]);
+  let hash = 5381;
+  for (let i = 0; i < text.length; i++) hash = ((hash << 5) + hash + text.charCodeAt(i)) >>> 0;
+  return hash.toString(36);
+}
+
 // Meta tags for a page's card. The "og-card" tag carries the card's content to
 // the build, which draws the image and then removes that tag from the page.
 export function ogMeta(pathname: string, card: OgCard) {
-  const url = ogImageUrl(pathname);
+  // The version changes whenever the card does, so WhatsApp and others that cache
+  // previews by image address fetch the new picture instead of the old one.
+  const url = `${ogImageUrl(pathname)}?v=${cardVersion(card)}`;
   const data = { key: ogKey(pathname), ...card, photo: sharePath(card.photo) };
   return [
     { property: "og:image", content: url },
