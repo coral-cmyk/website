@@ -56,10 +56,10 @@ export function Header() {
         </div>
         {/* The menu sits at the right edge, on the same line when it fits. */}
         <nav className="ml-auto flex shrink-0 flex-nowrap gap-2 whitespace-nowrap text-[0.5rem] font-medium uppercase tracking-[0.12em] sm:gap-3 sm:text-[0.6rem] sm:tracking-[0.18em] md:gap-8 md:text-[0.7rem] md:tracking-[0.32em]">
-          <Link to="/projects" className="link-line">Projects</Link>
-          <Link to="/studio" className="link-line">Studio</Link>
-          <Link to="/press" className="link-line">Press</Link>
-          <Link to="/contact" className="link-line">Contact</Link>
+          <Link to="/projects/" className="link-line">Projects</Link>
+          <Link to="/studio/" className="link-line">Studio</Link>
+          <Link to="/press/" className="link-line">Press</Link>
+          <Link to="/contact/" className="link-line">Contact</Link>
         </nav>
       </div>
     </header>
@@ -76,12 +76,12 @@ export function Footer() {
         <div className="flex flex-wrap gap-x-6 gap-y-3 md:gap-8">
           {/* The Journal lives in the footer, and appears once a post is published. */}
           {posts.length > 0 && (
-            <Link to="/journal" className="link-line">
+            <Link to="/journal/" className="link-line">
               Journal
             </Link>
           )}
-          <Link to="/privacy" resetScroll className="link-line">Privacy</Link>
-          <Link to="/accessibility" className="link-line">Accessibility</Link>
+          <Link to="/privacy/" resetScroll className="link-line">Privacy</Link>
+          <Link to="/accessibility/" className="link-line">Accessibility</Link>
           <a href={SOCIAL.instagram} target="_blank" rel="noreferrer" className="link-line">Instagram</a>
           <a href={SOCIAL.whatsapp} target="_blank" rel="noreferrer" className="link-line">WhatsApp</a>
         </div>

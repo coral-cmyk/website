@@ -34,7 +34,7 @@ export const Route = createFileRoute("/work/$slug")({
   },
   notFoundComponent: () => (
     <main className="flex min-h-screen items-center justify-center">
-      <Link to="/projects" className="display text-5xl link-line">Back to projects</Link>
+      <Link to="/projects/" className="display text-5xl link-line">Back to projects</Link>
     </main>
   ),
   component: ProjectPage,
@@ -48,7 +48,7 @@ function ProjectPage() {
   // Escape key returns to the Projects page.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") navigate({ to: "/projects" });
+      if (e.key === "Escape") navigate({ to: "/projects/" });
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -59,7 +59,7 @@ function ProjectPage() {
         {p.cover ? <img src={img(p.cover, 2400)} alt={p.name} className="h-full w-full object-cover opacity-85" /> : null}
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
         <Link
-          to="/projects"
+          to="/projects/"
           className={`absolute left-6 top-24 z-20 eyebrow link-line md:left-12 md:top-28 ${
             p.cover && p.lightTop ? "text-ink" : "text-bone"
           }`}
@@ -135,7 +135,7 @@ function ProjectPage() {
               {articles.map((a) => (
                 <li key={a.slug} dir={a.rtl ? "rtl" : undefined}>
                   <Link
-                    to="/journal/$slug"
+                    to="/journal/$slug/"
                     params={{ slug: a.slug }}
                     className="group grid gap-2 border-t border-ink/15 py-6 md:grid-cols-12 md:items-baseline md:gap-6"
                   >
@@ -152,7 +152,7 @@ function ProjectPage() {
           </section>
         );
       })()}
-      <Link to="/work/$slug" params={{ slug: next.slug }} className="group mt-32 block border-t px-6 py-24 md:px-12">
+      <Link to="/work/$slug/" params={{ slug: next.slug }} className="group mt-32 block border-t px-6 py-24 md:px-12">
         <p className="eyebrow text-muted-foreground">Next project</p>
         <p className="project-title mt-4 text-5xl transition-transform duration-700 group-hover:translate-x-6 md:text-[7vw]">{next.name} →</p>
       </Link>

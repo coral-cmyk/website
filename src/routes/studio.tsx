@@ -65,7 +65,7 @@ function Studio() {
             <p className="mt-3 text-lg">A' Design Award — Interior Space &amp; Exhibition Design, 2019–2020</p>
             <p className="text-lg">YAC Calamity Atelier — Honorary Mention</p>
           </div>
-          <Link to="/contact" className="inline-block eyebrow link-line">Begin a project →</Link>
+          <Link to="/contact/" className="inline-block eyebrow link-line">Begin a project →</Link>
         </div>
       </section>
       <div className="h-40" />

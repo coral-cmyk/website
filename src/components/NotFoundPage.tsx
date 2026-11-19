@@ -15,7 +15,7 @@ export function NotFoundPage() {
         The page you&apos;re looking for doesn&apos;t exist or has moved.
       </p>
       <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 text-lg">
-        <Link to="/projects" className="link-line">
+        <Link to="/projects/" className="link-line">
           See the projects
         </Link>
         <Link to="/" className="link-line">

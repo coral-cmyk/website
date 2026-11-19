@@ -21,7 +21,7 @@ export default defineConfig({
       },
       // Nothing links to /404 (or to /journal before its first post), so list them
       // explicitly; postbuild turns /404 into 404.html.
-      pages: [{ path: "/404" }, { path: "/journal" }],
+      pages: [{ path: "/404" }, { path: "/journal/" }],
     }),
     viteReact(),
     tailwindcss(),

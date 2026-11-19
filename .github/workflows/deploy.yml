@@ -43,3 +43,23 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tell Bing (and through it ChatGPT search / Copilot) about pages that changed
+  # today, right after they are published. The key file lives in public/.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the built site
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+      - name: Notify IndexNow
+        run: |
+          tar -xf artifact.tar ./indexnow-urls.json
+          if [ "$(cat indexnow-urls.json)" = "[]" ]; then echo "Nothing new today"; exit 0; fi
+          jq -n --argjson urls "$(cat indexnow-urls.json)" \
+            '{host: "coco-atelier.com", key: "0647f7fdee048e3a97c582e44550751e", keyLocation: "https://coco-atelier.com/0647f7fdee048e3a97c582e44550751e.txt", urlList: $urls}' > body.json
+          cat body.json
+          curl -sS -o /dev/null -w "IndexNow responded %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" --data @body.json

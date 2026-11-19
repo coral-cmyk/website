@@ -86,6 +86,14 @@ const all = pages(out).map((file) => {
   const alternates = [
     ...html.matchAll(/<link[^>]*rel="alternate"[^>]*hrefLang="([^"]+)"[^>]*href="([^"]+)"/gi),
   ].map((m) => ({ lang: m[1], href: m[2] }));
+  // Photos shown on the page (not logos or preview cards), for the image sitemap.
+  const images = [
+    ...new Set(
+      [...html.matchAll(/<img[^>]*\ssrc="(\/assets\/[^"]+\.(?:jpe?g|png|webp))"/gi)]
+        .map((m) => m[1])
+        .filter((src) => !/\/assets\/(?:coco-atelier-|share\/)/.test(src)),
+    ),
+  ].map((src) => `${SITE}${src}`);
   return {
     url,
     dir,
@@ -95,6 +103,7 @@ const all = pages(out).map((file) => {
     modified: metaOf(html, "article:modified_time"),
     lang: html.match(/<html[^>]*lang="([^"]+)"/)?.[1] ?? "en",
     noindex: html.includes('name="robots" content="noindex"'),
+    images,
     alternates,
     isPost: /^journal\/[^/]+$/.test(dir),
   };
@@ -103,24 +112,45 @@ const all = pages(out).map((file) => {
 // Pages marked noindex (drafts, an empty Journal) stay out of the sitemap and feeds.
 const indexable = all.filter((p) => !p.noindex).sort((a, b) => a.url.localeCompare(b.url));
 
+const posts = indexable
+  .filter((p) => p.isPost)
+  .sort((a, b) => b.published.localeCompare(a.published));
+
+// lastmod is only given where it is truthful (Google ignores sites whose dates
+// are not): a post's own date, and for the Journal index the newest post's date,
+// so Google re-crawls the index (and finds the new post) the day one goes live.
+const newest = posts.reduce((d, p) => [d, p.modified || p.published].sort().pop(), "");
+const lastmodOf = (p) => p.modified || p.published || (p.dir === "journal" ? newest : "");
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${indexable
   .map((p) => {
-    const lastmod = p.modified || p.published;
+    const lastmod = lastmodOf(p);
     const alt = p.alternates
       .map((a) => `\n    <xhtml:link rel="alternate" hreflang="${a.lang}" href="${a.href}"/>`)
       .join("");
-    return `  <url><loc>${p.url}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}${alt}</url>`;
+    const img = p.images
+      .map((src) => `\n    <image:image><image:loc>${escapeXml(src)}</image:loc></image:image>`)
+      .join("");
+    return `  <url>\n    <loc>${p.url}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ""}${alt}${img}\n  </url>`;
   })
   .join("\n")}
 </urlset>
 `;
 writeFileSync(join(out, "sitemap.xml"), sitemap);
 
-const posts = indexable
-  .filter((p) => p.isPost)
-  .sort((a, b) => b.published.localeCompare(a.published));
+// IndexNow (Bing, Yandex, Seznam, Naver; Bing powers ChatGPT search and Copilot):
+// the URLs that changed today, sent by the deploy workflow right after publishing.
+// Google does not use IndexNow; it picks changes up from sitemap.xml and the feed.
+const today = new Date().toISOString().slice(0, 10);
+const changedToday = indexable.filter((p) => lastmodOf(p) === today).map((p) => p.url);
+writeFileSync(
+  join(out, "indexnow-urls.json"),
+  JSON.stringify(changedToday.length ? [...changedToday, `${SITE}/sitemap.xml`] : []),
+);
 
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -130,6 +160,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
     <atom:link href="${SITE}/journal/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Interior design guides and project notes from Coco Atelier, Coral Mesika's studio in Tel Aviv.</description>
     <language>en</language>
+    <lastBuildDate>${new Date(`${newest || today}T06:00:00Z`).toUTCString()}</lastBuildDate>
 ${posts
   .map(
     (p) => `    <item>

@@ -74,6 +74,16 @@ function extractFaq(body: string): Faq[] {
     .filter((f) => f.question && f.answer);
 }
 
+// Site links get the trailing "/" of their canonical address (no redirect on click
+// or crawl); photos in the text load lazily so the cover and first screen come first.
+const polish = (html: string) =>
+  html
+    .replace(
+      /href="(\/(?!\/)[^"#?.]*?[^\/"#?])((?:[?#][^"]*)?)"/g,
+      (_, path: string, rest: string) => `href="${path}/${rest}"`,
+    )
+    .replace(/<img (?![^>]*loading=)/g, '<img loading="lazy" decoding="async" ');
+
 function parse(path: string, raw: string): JournalPost {
   const slug = path.split("/").pop()!.replace(/\.md$/, "");
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
@@ -109,7 +119,7 @@ function parse(path: string, raw: string): JournalPost {
     rtl: lang === "he",
     translationOf: meta.get("translationOf") || undefined,
     draft: meta.get("draft") === "true",
-    html: marked.parse(body, { async: false }) as string,
+    html: polish(marked.parse(body, { async: false }) as string),
     faq: extractFaq(body),
     words: plain(body).split(" ").length,
     pendingNotes: (body.match(/<!--\s*CORAL:/g) ?? []).length,

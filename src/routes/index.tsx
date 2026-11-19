@@ -69,7 +69,7 @@ export function Index() {
         <CoverGallery />
         <div className={BAND}>
           <div className="flex justify-center">
-            <Link to="/projects" className={CTA}>
+            <Link to="/projects/" className={CTA}>
               See all projects
             </Link>
           </div>
@@ -77,7 +77,7 @@ export function Index() {
         <UpcomingGallery />
         <div className={`${BAND} border-b-4 border-ink`}>
           <div className="flex justify-center">
-            <Link to="/projects" className={CTA}>
+            <Link to="/projects/" className={CTA}>
               Under construction projects
             </Link>
           </div>
@@ -95,7 +95,7 @@ export function Index() {
             function, aesthetics, and experience.
           </p>
           <div className="mt-12 flex justify-center">
-            <Link to="/studio" className={CTA}>
+            <Link to="/studio/" className={CTA}>
               The studio
             </Link>
           </div>

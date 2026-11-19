@@ -18,7 +18,7 @@ export function UpcomingGallery() {
   return (
     <div className={`${ROW} md:grid-cols-3`}>
       {list.map((p) => (
-        <Link key={p.slug} to="/work/$slug" params={{ slug: p.slug }} className="group relative block overflow-hidden bg-ink">
+        <Link key={p.slug} to="/work/$slug/" params={{ slug: p.slug }} className="group relative block overflow-hidden bg-ink">
           <img src={img(p.cover!, 1200)} alt={p.name} loading="lazy" className="block aspect-[3/2] w-full object-cover opacity-55 transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:opacity-40" />
           <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center gap-4 p-6 text-center text-bone">
             <h2 className="project-title text-2xl md:text-3xl">{p.name}</h2>
@@ -39,7 +39,7 @@ export function CoverGallery() {
       {featured.map((p) => (
         <Link
           key={p.slug}
-          to="/work/$slug"
+          to="/work/$slug/"
           params={{ slug: p.slug }}
           className="group relative block overflow-hidden bg-ink"
         >

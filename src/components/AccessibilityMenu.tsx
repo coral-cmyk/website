@@ -58,7 +58,7 @@ export function AccessibilityMenu() {
           </div>
           <div className="mt-3 flex items-center justify-between text-sm">
             <button type="button" onClick={() => setP(DEFAULT)} className="link-line">Reset</button>
-            <Link to="/accessibility" onClick={() => setOpen(false)} className="link-line">Accessibility statement</Link>
+            <Link to="/accessibility/" onClick={() => setOpen(false)} className="link-line">Accessibility statement</Link>
           </div>
         </div>
       )}

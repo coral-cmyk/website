@@ -124,7 +124,7 @@ function JournalPost() {
       <article lang={post.lang}>
         <header className="max-w-5xl">
           <p className="eyebrow flex flex-wrap items-center gap-x-3 gap-y-2 text-muted-foreground">
-            <Link to="/journal" className="link-line">
+            <Link to="/journal/" className="link-line">
               {t.journal}
             </Link>
             <span aria-hidden="true">·</span>
@@ -136,7 +136,7 @@ function JournalPost() {
             {post.draft && <span>· Draft</span>}
             {translation && (
               <Link
-                to="/journal/$slug"
+                to="/journal/$slug/"
                 params={{ slug: translation.slug }}
                 className="link-line ms-auto normal-case tracking-normal"
               >
@@ -154,7 +154,7 @@ function JournalPost() {
           )}
           <p className="mt-10 text-sm">
             {t.by}{" "}
-            <Link to="/studio" className="link-line font-medium">
+            <Link to="/studio/" className="link-line font-medium">
               Coral Mesika
             </Link>
             <span className="text-muted-foreground"> — {t.role}</span>
@@ -187,7 +187,7 @@ function JournalPost() {
                     {related.map((p) => (
                       <li key={p.slug}>
                         <Link
-                          to="/work/$slug"
+                          to="/work/$slug/"
                           params={{ slug: p.slug }}
                           className="group grid grid-cols-[6rem_1fr] items-center gap-4"
                         >
@@ -236,14 +236,14 @@ function JournalPost() {
         <section className="mt-32 border-t border-ink/15 pt-10">
           <div className="flex items-baseline justify-between">
             <h2 className="eyebrow">{t.more}</h2>
-            <Link to="/journal" className="eyebrow link-line text-muted-foreground">
+            <Link to="/journal/" className="eyebrow link-line text-muted-foreground">
               {t.all}
             </Link>
           </div>
           <ul className="mt-10 grid gap-12 md:grid-cols-3">
             {more.map((p) => (
               <li key={p.slug} dir={p.rtl ? "rtl" : "ltr"}>
-                <Link to="/journal/$slug" params={{ slug: p.slug }} className="group block">
+                <Link to="/journal/$slug/" params={{ slug: p.slug }} className="group block">
                   {p.cover && (
                     <span className="img-zoom block">
                       <img

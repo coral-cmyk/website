@@ -76,7 +76,7 @@ function Journal() {
 
       {lead && (
         <Link
-          to="/journal/$slug"
+          to="/journal/$slug/"
           params={{ slug: lead.slug }}
           dir={lead.rtl ? "rtl" : undefined}
           className="group mt-20 grid gap-8 border-t border-ink/15 pt-10 md:grid-cols-12 md:gap-12"
@@ -110,7 +110,7 @@ function Journal() {
         <ul className="mt-24 grid gap-x-10 gap-y-20 border-t border-ink/15 pt-12 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((post) => (
             <li key={post.slug} dir={post.rtl ? "rtl" : undefined}>
-              <Link to="/journal/$slug" params={{ slug: post.slug }} className="group block">
+              <Link to="/journal/$slug/" params={{ slug: post.slug }} className="group block">
                 {post.cover && (
                   <span className="img-zoom block">
                     <img
