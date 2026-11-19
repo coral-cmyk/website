@@ -1,33 +1,62 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { posts, formatDate } from "@/lib/journal";
+import { posts, formatDate, readingMinutes, type JournalPost } from "@/lib/journal";
 import { img } from "@/lib/projects";
 
 export const Route = createFileRoute("/journal/")({
   head: () => ({
     meta: [
-      { title: "Journal — Coco Atelier by Coral Mesika" },
+      { title: "Journal — Interior Design Notes from Tel Aviv | Coco Atelier" },
       {
         name: "description",
-        content: "Notes from Coco Atelier, Coral Mesika's interior design studio in Tel Aviv.",
+        content:
+          "Guides and project notes from Coco Atelier, Coral Mesika's interior design studio in Tel Aviv: renovation, hospitality, offices and homes in Israel and abroad.",
       },
       { property: "og:title", content: "Journal — Coco Atelier" },
       {
         property: "og:description",
-        content: "Notes from Coco Atelier, interior design by Coral Mesika.",
+        content: "Interior design guides and project notes from Coral Mesika's studio in Tel Aviv.",
       },
       { property: "og:type", content: "website" },
       // Keep an empty Journal out of search results until the first post is published.
       ...(posts.length === 0 ? [{ name: "robots", content: "noindex" }] : []),
     ],
+    links: [
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "Coco Atelier Journal",
+        href: "/journal/rss.xml",
+      },
+    ],
   }),
   component: Journal,
 });
+
+function Meta({ post }: { post: JournalPost }) {
+  return (
+    <span className="eyebrow block text-muted-foreground">
+      {formatDate(post.date, post.lang)}
+      <span className="mx-2">·</span>
+      {readingMinutes(post)} {post.lang === "he" ? "דק׳" : "min"}
+      {post.lang === "he" && <span className="mx-2">· עברית</span>}
+      {post.draft && <span className="mx-2">· Draft</span>}
+    </span>
+  );
+}
 
 function Journal() {
   const [lead, ...rest] = posts;
   return (
     <main className="page-enter px-6 pt-36 md:px-12">
-      <h1 className="serif-display mt-6 leading-[0.95] text-[16vw] md:text-[9vw]">Journal</h1>
+      <header className="grid gap-6 md:grid-cols-12 md:items-end">
+        <h1 className="serif-display leading-[0.95] text-[16vw] md:col-span-7 md:text-[9vw]">
+          Journal
+        </h1>
+        <p className="max-w-md text-lg leading-relaxed text-muted-foreground md:col-span-5 md:pb-4">
+          Notes from the studio on designing homes, hotels and workplaces, in Tel Aviv and wherever
+          the work takes us.
+        </p>
+      </header>
 
       {!lead && (
         <p className="mt-16 text-lg text-muted-foreground">The first entry is on its way.</p>
@@ -37,57 +66,64 @@ function Journal() {
         <Link
           to="/journal/$slug"
           params={{ slug: lead.slug }}
+          dir={lead.rtl ? "rtl" : undefined}
           className="group mt-20 grid gap-8 border-t border-ink/15 pt-10 md:grid-cols-12 md:gap-12"
         >
           {lead.cover && (
-            <div className="img-zoom md:col-span-7">
-              <img src={img(lead.cover)} alt="" className="aspect-[3/2] w-full object-cover" />
-            </div>
+            <span className="img-zoom block md:col-span-7">
+              <img
+                src={img(lead.cover)}
+                alt={lead.coverAlt}
+                className="aspect-[3/2] w-full object-cover"
+                fetchPriority="high"
+              />
+            </span>
           )}
-          <div
-            dir={lead.rtl ? "rtl" : undefined}
-            className={lead.cover ? "md:col-span-5" : "md:col-span-8"}
-          >
-            <p className="eyebrow text-muted-foreground">
-              {formatDate(lead.date)}
-              {lead.draft && " · Draft"}
-            </p>
-            <h2 className="display mt-5 text-4xl leading-[1.05] md:text-6xl">
+          <span className={`block ${lead.cover ? "md:col-span-5" : "md:col-span-8"}`}>
+            <Meta post={lead} />
+            <span className="display mt-5 block text-4xl leading-[1.05] md:text-6xl">
               <span className="link-line">{lead.title}</span>
-            </h2>
+            </span>
             {lead.excerpt && (
-              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+              <span className="mt-6 block max-w-xl text-lg leading-relaxed text-muted-foreground">
                 {lead.excerpt}
-              </p>
+              </span>
             )}
-            <p className="eyebrow mt-8">Read →</p>
-          </div>
+            <span className="eyebrow mt-8 block">{lead.lang === "he" ? "לקריאה ←" : "Read →"}</span>
+          </span>
         </Link>
       )}
 
       {rest.length > 0 && (
-        <section className="mt-24 border-b border-ink/15">
+        <ul className="mt-24 grid gap-x-10 gap-y-20 border-t border-ink/15 pt-12 sm:grid-cols-2 lg:grid-cols-3">
           {rest.map((post) => (
-            <Link
-              key={post.slug}
-              to="/journal/$slug"
-              params={{ slug: post.slug }}
-              dir={post.rtl ? "rtl" : undefined}
-              className="group grid gap-2 border-t border-ink/15 py-8 md:grid-cols-12 md:items-baseline md:gap-6"
-            >
-              <span className="eyebrow text-muted-foreground md:col-span-3">
-                {formatDate(post.date)}
-                {post.draft && " · Draft"}
-              </span>
-              <span className="display text-3xl leading-none md:col-span-5 md:text-[2.6rem]">
-                <span className="link-line">{post.title}</span>
-              </span>
-              <span className="text-lg leading-snug text-muted-foreground md:col-span-4">
-                {post.excerpt}
-              </span>
-            </Link>
+            <li key={post.slug} dir={post.rtl ? "rtl" : undefined}>
+              <Link to="/journal/$slug" params={{ slug: post.slug }} className="group block">
+                {post.cover && (
+                  <span className="img-zoom block">
+                    <img
+                      src={img(post.cover)}
+                      alt={post.coverAlt}
+                      loading="lazy"
+                      className="aspect-[4/3] w-full object-cover"
+                    />
+                  </span>
+                )}
+                <span className="mt-6 block">
+                  <Meta post={post} />
+                </span>
+                <span className="display mt-3 block text-3xl leading-[1.08]">
+                  <span className="link-line">{post.title}</span>
+                </span>
+                {post.excerpt && (
+                  <span className="mt-4 block leading-relaxed text-muted-foreground">
+                    {post.excerpt}
+                  </span>
+                )}
+              </Link>
+            </li>
           ))}
-        </section>
+        </ul>
       )}
       <div className="h-40" />
     </main>

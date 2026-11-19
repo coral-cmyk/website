@@ -1,16 +1,24 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# All search engines and AI assistants are welcome to read and cite this site.
 User-agent: *
+Allow: /
+
+# Explicitly named so their operators' allow-lists are unambiguous.
+User-agent: Googlebot
+User-agent: Google-Extended
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: DuckAssistBot
+User-agent: Twitterbot
+User-agent: facebookexternalhit
 Allow: /
 
 Sitemap: https://coco-atelier.com/sitemap.xml

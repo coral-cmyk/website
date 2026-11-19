@@ -5,6 +5,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
@@ -15,6 +16,7 @@ import { Header, Footer } from "@/components/SiteChrome";
 import { AccessibilityMenu } from "@/components/AccessibilityMenu";
 import { NotFoundPage } from "@/components/NotFoundPage";
 import { projects, shareImg } from "@/lib/projects";
+import { JsonLd, canonical, studioSchema } from "@/lib/seo";
 
 // Link-preview image for pages that don't set their own (the XL APT cover).
 const DEFAULT_SHARE_IMAGE = shareImg(projects.find((p) => p.slug === "xl-apt")?.cover ?? "");
@@ -89,10 +91,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  // Hebrew Journal posts declare their language on the whole page.
+  const hebrew = useRouterState({
+    select: (s) =>
+      s.matches.some(
+        (m) => (m.loaderData as { post?: { lang?: string } } | undefined)?.post?.lang === "he",
+      ),
+  });
   return (
-    <html lang="en">
+    <html lang={hebrew ? "he" : "en"}>
       <head>
         <HeadContent />
+        <link rel="canonical" href={canonical(pathname)} />
+        <meta property="og:url" content={canonical(pathname)} />
+        <JsonLd data={studioSchema()} />
       </head>
       <body>
         {children}

@@ -18,3 +18,4 @@
 /assets/wix/0fbf64_cb4b813a314e4e1bb024bfcabf5157f0.jpg
 /assets/wix/b294f9_803c17fa25404efea46495707e7367db.jpg
 /assets/xl-apt/850_3625aaa.jpg
+/assets/xl-apt/850_3754aaa.jpg

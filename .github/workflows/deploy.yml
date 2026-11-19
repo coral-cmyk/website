@@ -4,6 +4,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Daily rebuild so Journal posts go live on their publish date (06:00 Israel time).
+  schedule:
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 permissions:

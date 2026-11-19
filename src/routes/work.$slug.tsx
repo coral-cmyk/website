@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound, useNavigate } from "@tanstack/react-router";
 import { projects, img, shareImg, galleryImages, gallerySpans } from "@/lib/projects";
+import { posts, formatDate } from "@/lib/journal";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
@@ -120,6 +121,33 @@ function ProjectPage() {
         </section>
       )}
 
+      {(() => {
+        const articles = posts.filter((a) => a.projects.includes(p.slug)).slice(0, 3);
+        if (articles.length === 0) return null;
+        return (
+          <section className="mt-32 px-6 md:px-12">
+            <p className="eyebrow text-muted-foreground">From the Journal</p>
+            <ul className="mt-6 border-b border-ink/15">
+              {articles.map((a) => (
+                <li key={a.slug} dir={a.rtl ? "rtl" : undefined}>
+                  <Link
+                    to="/journal/$slug"
+                    params={{ slug: a.slug }}
+                    className="group grid gap-2 border-t border-ink/15 py-6 md:grid-cols-12 md:items-baseline md:gap-6"
+                  >
+                    <span className="eyebrow text-muted-foreground md:col-span-3">
+                      {formatDate(a.date, a.lang)}
+                    </span>
+                    <span className="display text-2xl leading-tight md:col-span-9 md:text-3xl">
+                      <span className="link-line">{a.title}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })()}
       <Link to="/work/$slug" params={{ slug: next.slug }} className="group mt-32 block border-t px-6 py-24 md:px-12">
         <p className="eyebrow text-muted-foreground">Next project</p>
         <p className="project-title mt-4 text-5xl transition-transform duration-700 group-hover:translate-x-6 md:text-[7vw]">{next.name} →</p>
